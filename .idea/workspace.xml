@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da53bd7-9eae-4acf-b4db-a478096ef2b0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional/Distance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional/Permutations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional/Quadratic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional/Stopwatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional/WindChill.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/Annagram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/ExtendAnnagram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/ExtendPalindrome.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/PrimeNumber.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/Utility.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functional/Utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/functional/Utility.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,45 +19,51 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file leaf-file-name="Utility.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithm/Utility.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="88" column="43" lean-forward="true" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtendAnnagram.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm/ExtendAnnagram.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="11" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrimeNumber.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm/PrimeNumber.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtendPalindrome.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm/ExtendPalindrome.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utility.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/functional/Utility.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1089">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding>
-                <element signature="e#2#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WindChill.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functional/WindChill.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Permutations.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functional/Permutations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -92,10 +96,15 @@
         <option value="$PROJECT_DIR$/functional/Distance.py" />
         <option value="$PROJECT_DIR$/functional/Stopwatch.py" />
         <option value="$PROJECT_DIR$/functional/Quadratic.py" />
-        <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/functional/WindChill.py" />
         <option value="$PROJECT_DIR$/functional/Permutations.py" />
         <option value="$PROJECT_DIR$/functional/Utility.py" />
+        <option value="$PROJECT_DIR$/Algorithm/Annagram.py" />
+        <option value="$PROJECT_DIR$/Algorithm/PrimeNumber.py" />
+        <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/Algorithm/ExtendAnnagram.py" />
+        <option value="$PROJECT_DIR$/Algorithm/ExtendPalindrome.py" />
+        <option value="$PROJECT_DIR$/Algorithm/Utility.py" />
       </list>
     </option>
   </component>
@@ -124,6 +133,11 @@
             <path>
               <item name="Zeeshan_Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Zeeshan_Python" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zeeshan_Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zeeshan_Python" type="462c0819:PsiDirectoryNode" />
               <item name="functional" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -131,6 +145,11 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -144,7 +163,61 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Permutations">
+  <component name="RunManager" selected="Python.ExtendPalindrome">
+    <configuration name="Annagram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Zeeshan_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/Annagram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ExtendAnnagram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Zeeshan_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/ExtendAnnagram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ExtendPalindrome" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Zeeshan_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/ExtendPalindrome.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="FlipCoin" type="PythonConfigurationType" factoryName="Python">
       <module name="Zeeshan_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,7 +236,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Permutations" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="PrimeNumber" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Zeeshan_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -171,65 +244,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functional" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functional/Permutations.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Quadratic" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Zeeshan_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functional" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functional/Quadratic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Stopwatch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Zeeshan_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functional" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functional/Stopwatch.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="WindChill" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Zeeshan_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functional" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functional/WindChill.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/PrimeNumber.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -256,18 +275,18 @@
     <list>
       <item itemvalue="Python.FlipCoin" />
       <item itemvalue="Python.demo" />
-      <item itemvalue="Python.Stopwatch" />
-      <item itemvalue="Python.Quadratic" />
-      <item itemvalue="Python.WindChill" />
-      <item itemvalue="Python.Permutations" />
+      <item itemvalue="Python.Annagram" />
+      <item itemvalue="Python.PrimeNumber" />
+      <item itemvalue="Python.ExtendAnnagram" />
+      <item itemvalue="Python.ExtendPalindrome" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Permutations" />
+        <item itemvalue="Python.ExtendPalindrome" />
+        <item itemvalue="Python.ExtendAnnagram" />
         <item itemvalue="Python.demo" />
-        <item itemvalue="Python.WindChill" />
-        <item itemvalue="Python.Quadratic" />
-        <item itemvalue="Python.Stopwatch" />
+        <item itemvalue="Python.PrimeNumber" />
+        <item itemvalue="Python.Annagram" />
       </list>
     </recent_temporary>
   </component>
@@ -285,27 +304,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="-11" width="1307" height="780" extended-state="6" />
-    <editor active="true" />
+    <frame x="61" y="-4" width="1305" height="772" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24597701" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.3678161" side_tool="true" weight="0.34789157" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.3298193" />
-      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.6321839" visible="true" weight="0.34789157" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.6321839" weight="0.34789157" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3298193" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -466,16 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="e#1#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functional/WindChill.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -492,11 +500,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functional/Utility.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1089">
+        <state relative-caret-position="-2577">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
             <element signature="e#2#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/Annagram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/PrimeNumber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/ExtendAnnagram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/ExtendPalindrome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/Utility.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="88" column="43" lean-forward="true" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
         </state>
       </provider>
     </entry>

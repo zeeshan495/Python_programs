@@ -54,6 +54,14 @@ import random
 # time=stop_time-start_time
 # print(time)
 
-var_str="abc"
-out=list(var_str)
-print(out)
+# var_str="ABCZYX"
+# out=list(var_str)
+# print(out)
+# out.sort()
+# print(out)
+
+my_arr=[None]*4
+for x in range(0,len(my_arr)):
+    my_arr[x]=int(input("enter value"))
+
+print(my_arr)
