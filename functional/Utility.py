@@ -1,7 +1,16 @@
+
+
+import time
+import math
 from array import *
 import random
 
 class Utility():
+    start_time = 0
+    stop_time = 0
+    running = False
+    global swap
+    global permute
 
     def replacing(self, input_string, main_string):
         if len(input_string) >= 3:
@@ -170,3 +179,66 @@ class Utility():
                         count=count+1
                         print(str(my_array[x])+" "+str(my_array[y])+" "+str(my_array[z]))
         print("number of triplets "+str(count))
+
+    def distance(self,var_x,var_y):
+        var_result=math.sqrt(math.pow(var_x, 2)+math.pow(var_y,2))
+        print("The Euclidean distance of "+str(var_x)+" and "+str(var_y)+" is : "+str(var_result))
+
+    # global permute
+    def permute(self,var_str,var_left,var_right):
+        if(var_left==var_right):
+                print(var_str)
+        else:
+            for x in range(var_left,var_right+1):
+                var_str=swap(var_str,var_left,x)
+                permute(var_str,var_left+1,var_right)
+
+
+    def swap(var_str,var_left,var_right):
+        temp=0
+        my_list=list(var_str)
+        temp=my_list[var_left]
+        my_list[var_left]=my_list[var_right]
+        my_list[var_right]=temp
+        var_out=''.join(my_list)
+        return var_out
+
+    def start(self):
+        global start_time,running
+        start_time = int(round(time.time() * 100))
+        running=True
+
+    def stop(self):
+        global stop_time, running
+        stop_time=int(round(time.time() * 100))
+        running=False
+
+    def elapsed_time(self):
+        global start_time, running, stop_time
+        if(running==True):
+            elapsed_time=int(round(time.time() * 100))-start_time
+        else:
+            elapsed_time=stop_time-start_time
+        return elapsed_time
+
+    def find_roots(self,a,b,c):
+        delta=0
+        root_1=0
+        root_2=0
+        try:
+            delta = (b * b)-(4 * a * c)
+            root_1 = (-b + math.sqrt(delta)) / (2 * a)
+            root_2 = (-b - math.sqrt(delta)) / (2 * a)
+            print("root 1 of x : "+str(root_1))
+            print("root 2 of x : " + str(root_2))
+        except ValueError :
+            print("roots are not found for those values")
+
+    def weather(self,var_t,var_v):
+        var_w=0
+        if((var_t<=50) and (var_v<=120) and (var_v >=3)):
+            var_w = 35.74 + (0.6215 * var_t) + ((0.4275 * var_t) - 35.75) * math.pow(var_v, 0.16)
+            print(var_w)
+        else:
+            print("please enter valid input")
+
