@@ -1,4 +1,5 @@
 
+import math
 class Utility:
 
     def annagram(self,var_str1,var_str2):
@@ -90,3 +91,186 @@ class Utility:
                 print(str(var_temp)+" palindrome")
             else:
                 print(str(var_temp)+" is not a palindrome")
+
+    def guessing(self,var_low,var_high):
+        var_mid=(var_low+var_high)/2
+        if(var_mid == var_high):
+            return var_mid
+        print(" if it is "+str(var_mid)+" then enter 'stop'")
+        print(" if it is less than "+str(var_mid)+" then enter 'YES' otherwise 'NO'")
+        var_option=raw_input()
+        if(var_option.lower()=="stop"):
+            return var_mid
+        elif(var_option.lower()=="yes"):
+            return  self.guessing(var_low,var_mid)
+        elif(var_option.lower()=="no"):
+            return self.guessing(var_mid+1,var_high)
+        else:
+            print(" please enter valid option : ")
+            return self.guessing(var_low,var_high)
+
+    def binary_search(self,my_array,var_low,var_high,var_key):
+        if(var_low <= var_high):
+            var_mid = var_low+(var_high-var_low)/2
+            if(my_array[var_mid] == var_key):
+                print(" key found at : "+str(var_mid+1))
+            elif(my_array[var_mid] > var_key):
+                self.binarysearch(my_array,var_low,var_mid-1,var_key)
+            elif(my_array[var_mid] < var_key):
+                self.binarysearch(my_array,var_mid+1,var_high,var_key)
+        else:
+            print(" key not found ")
+
+    def insertion_sort(self,my_array):
+        for x in range(0,len(my_array)):
+            var_key=my_array[x]
+            for y in range(x-1, -1, -1):
+                if(var_key < my_array[y]):
+                    var_temp=my_array[y]
+                    my_array[y]=my_array[y+1]
+                    my_array[y+1]=var_temp
+        return my_array
+
+    def bubble_sort(self,my_array):
+        var_temp=0
+        for x in range(0,len(my_array)-2):
+            for y in range(0, len(my_array)-2-x):
+                if(my_array[y]>my_array[y+1]):
+                    var_temp=my_array[y]
+                    my_array[y]=my_array[y+1]
+                    my_array[y+1]=var_temp
+        return my_array
+
+    def merge_sort(self,my_array):
+        # if given number is only one integer or nothing then it will return.
+        if (len(my_array) <= 1):
+            return my_array
+        # dividing length into half.
+        var_mid = len(my_array)/2
+        left_array = [None]*var_mid
+        right_array=[]
+        if (len(my_array) % 2 == 0):
+            right_array = [None]*var_mid
+        else:
+            var_len=var_mid+1
+            right_array = [None]*var_len
+
+        # collecting in left array.
+        for x in range(0,var_mid):
+            left_array[x] = my_array[x]
+        # collecting in right array.
+        var_x=0
+        for y in range(var_mid,len(my_array)):
+            if(var_x < len(right_array)):
+                right_array[var_x] = my_array[y]
+                var_x=var_x+1
+
+        left_array = self.merge_sort(left_array)
+        right_array = self.merge_sort(right_array)
+        result_array = self.merge_arrays(left_array,right_array)
+        return result_array
+
+    def merge_arrays(self,left_array,right_array):
+        # taking length to initialize arrays
+        var_length = len(left_array)+len(right_array)
+        result_array = [None]*var_length
+        var_left_index = 0
+        var_right_index = 0
+        var_result_index = 0
+
+        while (var_left_index<len(left_array)) or (var_right_index < len(right_array)):
+            if(var_left_index < len(left_array)) and (var_right_index < len(right_array)):
+                if(left_array[var_left_index] <= right_array[var_right_index]):
+                    result_array[var_result_index] = left_array[var_left_index]
+                    var_left_index = var_left_index+1
+                    var_result_index = var_result_index+1
+                else:
+                    result_array[var_result_index] = right_array[var_left_index]
+                    var_right_index = var_right_index + 1
+                    var_result_index = var_result_index + 1
+
+            elif (var_left_index < len(left_array)):
+                result_array[var_result_index] = left_array[var_left_index]
+                var_left_index = var_left_index + 1
+                var_result_index = var_result_index + 1
+
+            elif (var_right_index < len(right_array)):
+                result_array[var_result_index] = right_array[var_right_index]
+                var_right_index = var_right_index + 1
+                var_result_index = var_result_index + 1
+
+        return result_array
+
+    def counting_notes(self,var_amount):
+        my_array=[1000,500,100,50,10,5,2,1]
+        var_note=0
+        for x in range(0,len(my_array)):
+            var_number=var_amount/my_array[x]
+            print(" "+str(my_array[x])+" x "+str(var_number))
+            var_amount=var_amount%my_array[x]
+            var_note=var_note + var_number
+
+        return var_note
+
+    def day_of_week(self,var_day,var_month,var_year):
+        var_yo = var_year-(14-var_month) / 12
+        var_xo = var_yo + (var_yo / 4) - (var_yo / 100) + (var_yo / 400)
+        var_mo = var_month + 12 * ((14-var_month)/12) -2
+        var_d = (var_day + var_xo + (31 * var_mo)/12)%7
+
+        return var_d;
+
+    def celsius(self):
+        var_fahrenheit = int(input("enter fahrenheit temperature : "))
+        var_celsius = (var_fahrenheit - 32) * 5 / 9;
+        print(" In celsius : "+str(var_celsius))
+
+    def fahrenheit(self):
+        var_celsius = int(input("enter fahrenheit temperature : "))
+        var_fahrenheit = (var_celsius * 9 / 5) + 32
+        print(" In farenheit : "+str(var_fahrenheit))
+
+    def calculation(self,var_principal,var_interest,var_year):
+        var_n = 12 * var_year
+        var_r = var_interest / (12*100)
+        var_payment = (var_principal * var_r) / (1 - math.pow((1+var_r),(-var_n)))
+        print(" monthly payment : "+str(var_payment))
+
+    def calculate_sqrt(self,var_input):
+        var_temp = var_input
+        var_epsilon = 1e-15
+        while (abs(var_temp - (var_input / var_temp)) > (var_epsilon * var_temp)):
+            var_temp = (((var_input / var_temp) + var_temp) / 2.0)
+        print("The square root of "+str(var_input)+" is "+str(var_temp))
+
+    def to_binary(self,var_decimal):
+        var_binary = ""
+        var_rem = 0
+        while (var_decimal > 0) :
+            var_rem = var_decimal % 2
+            var_binary = str(var_rem) + var_binary
+            var_decimal = var_decimal / 2
+        while (len(var_binary) < 8) :
+            var_binary = str(0) + var_binary
+        return var_binary
+
+    def swap_nibbles(self,var_binary):
+        var_temp = ""
+        var_mid = len(var_binary) / 2
+        var_temp = var_temp + var_binary[var_mid:]
+        var_temp = var_temp + var_binary[:var_mid]
+        return var_temp
+
+    def to_decimal(self,var_binary):
+        var_sum = 0;
+        var_temp = ""
+        char_array = list(var_binary)
+        var_power = len(char_array)-1
+        print(" length of char array : "+str(len(char_array)))
+        print(" ")
+        for x in range(0,len(char_array)):
+            var_index_value =char_array[x]
+            var_sum = var_sum + (var_index_value * math.pow(2,var_power))
+            var_power = var_power-1
+        var_temp = var_temp + var_sum
+        return var_temp

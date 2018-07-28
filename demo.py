@@ -60,8 +60,18 @@ import random
 # out.sort()
 # print(out)
 
-my_arr=[None]*4
-for x in range(0,len(my_arr)):
-    my_arr[x]=int(input("enter value"))
+# my_arr=[None]*4
+# for x in range(0,len(my_arr)):
+#         my_arr[x]=int(input("enter value"))
+# for x in range( len(my_arr)-1, -1,-1):
+#     print(my_arr[x]),
+# print("\n")
+var_binary_str="00000100"
+# var_binary_arr=list(var_binary)
+var_mid = len(var_binary_str) / 2
+var_binary=int(var_binary_str)
+var_temp=""
 
-print(my_arr)
+print(var_binary[0,2])
+var_temp = var_temp + var_binary[var_mid+1,len(var_binary)]
+print(var_temp)

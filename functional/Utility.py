@@ -190,7 +190,7 @@ class Utility():
                 print(var_str)
         else:
             for x in range(var_left,var_right+1):
-                var_str=swap(var_str,var_left,x)
+                var_str=self.swap(var_str,var_left,x)
                 permute(var_str,var_left+1,var_right)
 
 
