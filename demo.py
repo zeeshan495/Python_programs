@@ -1,7 +1,9 @@
 
+
 import time
 import math
-from array import *
+from DataStructures.LinkedList import *
+from DataStructures.Node import *
 import random
 # print(random.uniform(0,1))
 # print(random.randint(0,20))
@@ -66,12 +68,32 @@ import random
 # for x in range( len(my_arr)-1, -1,-1):
 #     print(my_arr[x]),
 # print("\n")
-var_binary_str="00000100"
-# var_binary_arr=list(var_binary)
-var_mid = len(var_binary_str) / 2
-var_binary=int(var_binary_str)
-var_temp=""
+# var_binary_str="00000100"
+#  var_binary_arr=list(var_binary)
+# var_mid = len(var_binary_str) / 2
+# var_binary=int(var_binary_str)
+# var_temp=""
+#
+# print(var_binary[0,2])
+# var_temp = var_temp + var_binary[var_mid+1,len(var_binary)]
+# print(var_temp)
+# class demo(int):
+#     obj=Node(20)
+#     obj2=obj
+#     print("data "+str(obj2.data))
 
-print(var_binary[0,2])
-var_temp = var_temp + var_binary[var_mid+1,len(var_binary)]
-print(var_temp)
+class list:
+    list = LinkedList()
+    # list.delete(20)
+    list.add(30)
+    list.add("you")
+    list.add(40)
+    list.add(10)
+    list.add(20)
+    
+    list.display()
+    flag = list.search("you")
+    if flag is True:
+        print "found"
+    else:
+        print "not found"

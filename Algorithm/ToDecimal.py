@@ -5,7 +5,7 @@ class Tobinary:
     utility = Utility()
     while True:
         try:
-            var_input = float(input("please enter a decimal number "))
+            var_input = int(input("please enter a decimal number "))
             if(var_input <= 0):
                 print("please check the entered number : ")
             break

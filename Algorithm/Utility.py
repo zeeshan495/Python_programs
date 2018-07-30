@@ -262,15 +262,16 @@ class Utility:
         return var_temp
 
     def to_decimal(self,var_binary):
-        var_sum = 0;
+        var_sum = 0
         var_temp = ""
         char_array = list(var_binary)
         var_power = len(char_array)-1
         print(" length of char array : "+str(len(char_array)))
+        print("char array "+str(char_array))
         print(" ")
         for x in range(0,len(char_array)):
             var_index_value =char_array[x]
-            var_sum = var_sum + (var_index_value * math.pow(2,var_power))
+            var_sum = var_sum + (int(var_index_value) * math.pow(2,var_power))
             var_power = var_power-1
-        var_temp = var_temp + var_sum
+        var_temp = var_temp + str(var_sum)
         return var_temp

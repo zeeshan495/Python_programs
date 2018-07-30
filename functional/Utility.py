@@ -64,7 +64,7 @@ class Utility():
         loop=given_input/2
         for x in range(1,loop+1):
             value=x*x
-            if(given_input==value):
+            if(given_input == value):
                 return x
         return -1
 
