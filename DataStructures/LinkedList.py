@@ -1,9 +1,7 @@
 
 from Node import *
-from Utility import *
+
 class LinkedList:
-    global utility
-    utility = Utility()
     def __init__(self):
         self.head=None
 
@@ -51,31 +49,6 @@ class LinkedList:
         while(temp != None):
             print temp.data
             temp = temp.next_node
-
-    def operation(self,my_array, new_word, file):
-        for x in range(0, len(my_array)):
-            self.add(my_array[x])
-        flag=self.search(new_word)
-        print(" flag ",flag)
-        if (flag == False):
-            self.add(new_word)
-        else:
-            self.delete(new_word)
-        self.display()
-        node=self.head
-        utility.print_list(file,node)
-
-    def operation_order(self, my_array, new_word, file):
-        for x in range(0, len(my_array)):
-            self.add(my_array[x])
-        flag = self.search(new_word)
-        if (flag == False):
-            self.add_order(new_word)
-        else:
-            self.delete(new_word)
-        self.display()
-        node = self.head
-        utility.print_list(file, node)
 
     def add_order(self,data):
         obj_node = Node(data)

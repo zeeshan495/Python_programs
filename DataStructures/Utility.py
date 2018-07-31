@@ -14,3 +14,12 @@ class Utility:
                 file.write(head.data)
                 file.write(" ")
                 head = head.next_node
+
+    def input_int_data(self):
+        while True:
+            try:
+                var_input = int(input())
+                return var_input
+                break
+            except NameError:
+                print("please enter a integer...try again")

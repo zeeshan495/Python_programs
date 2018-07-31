@@ -1,13 +1,13 @@
-
-
 import time
 import math
 from DataStructures.LinkedList import *
 from DataStructures.Node import *
 import random
+
+
 # print(random.uniform(0,1))
 # print(random.randint(0,20))
-#numberOfTimes = int(raw_input("Please the number of times to Flip Coin "))
+# numberOfTimes = int(raw_input("Please the number of times to Flip Coin "))
 # rand=random.random()
 # if (rand < 0.5):
 #     print("if.....")
@@ -45,7 +45,7 @@ import random
 # a[0][1]=99
 # print(a)
 
-#print(" power "+str(math.pow(2,2)))
+# print(" power "+str(math.pow(2,2)))
 
 # start_time = 0
 # stop_time=0
@@ -81,16 +81,19 @@ import random
 #     obj=Node(20)
 #     obj2=obj
 #     print("data "+str(obj2.data))
+from Queue import *
+class demoa:
 
-class list:
+  
+
     list = LinkedList()
-    # list.delete(20)
+
     list.add(30)
     list.add("you")
     list.add(40)
     list.add(10)
     list.add(20)
-    
+
     list.display()
     flag = list.search("you")
     if flag is True:
