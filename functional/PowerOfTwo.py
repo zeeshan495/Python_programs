@@ -12,3 +12,7 @@ class PowerOfTwo:
                 break
         except NameError :
             print("please enter integer")
+        except OverflowError :
+            print("given number is very high...try again")
+        except SyntaxError :
+            print("check the given input and try again")

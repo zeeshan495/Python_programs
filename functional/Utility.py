@@ -9,8 +9,23 @@ class Utility():
     start_time = 0
     stop_time = 0
     running = False
-    global swap
-    global permute
+
+
+    def input_int_data(self):
+        while True:
+            try:
+                var_input = int(input())
+                return var_input
+                break
+            except NameError:
+                print("please enter a integer...try again")
+            except OverflowError:
+                print("given number is very high...try again")
+            except SyntaxError:
+                print("check the given input and try again")
+
+
+
 
     def replacing(self, input_string, main_string):
         if len(input_string) >= 3:
@@ -31,10 +46,10 @@ class Utility():
         else:
             print("please enter positive number")
         try:
-            print("percentage of head " + float((100.0 * heads) / number_of_times))
-            print("percentage of tail " + float((100.0 * tails) / number_of_times))
+            print("percentage of head " + str(float((100.0 * heads) / number_of_times)))
+            print("percentage of tail " + str(float((100.0 * tails) / number_of_times)))
         except  ZeroDivisionError :
-             print("Oops!  That was no valid number.  Try again...")
+             print("Oops!  That was Invalid number.  Try again...")
 
     def is_leap_year(self,year):
         if (year % 4 == 0) :
@@ -58,7 +73,7 @@ class Utility():
         harmonic_value=0
         for i in range(1,given_input+1):
             harmonic_value=(1.0/i)+harmonic_value
-        print("the harmonic value : ",harmonic_value)
+        print("the harmonic value : "+str(harmonic_value))
 
     def factorization(self,given_input):
         loop=given_input/2
@@ -82,29 +97,39 @@ class Utility():
                 wins=wins+1
             else:
                 loss=loss+1
+        print(" stake : "+str(amount))
         print("total number of wins "+str(wins))
         print("percentage of win "+str((100.0 * wins) / number_of_times))
         print("percentage of loss "+str((100.0 * loss) / number_of_times))
 
     def random_number(self,given_input):
+        # var_count = 0
+        # my_array = []
+        # var_loop = given_input*3
+        # for x in range(0, var_loop):
+        #     temp = random.randint(0, given_input)
+        #     var_count = var_count+1
+        #     if temp not in my_array:
+        #         my_array.append(temp)
+        # print(my_array)
+        # print("\ntotal number of times random number generate : " + str(var_count))
+
         count=0
         my_array=[None]*given_input
-        for x in range(0,given_input):
-            print(" x value : "+str(x))
+        # for x in range(0,given_input):
+        x=0
+        while(x < given_input):
             temp=random.randint(0,given_input)
             count=count+1
             my_array[x]=temp+1
             for y in range(0,x):
-                if(my_array[x]==my_array[y]):
-                    # print(" x array "+str(my_array[x])+ " y array "+str(my_array[y]))
-                    # print("before "+str(x))
-                    x-=1
-                    # print("after " + str(x))
+                if(my_array[x] == my_array[y]):
+                    x =x-1
                     break
-
+            x = x+1
         for x in range(0,given_input):
             print(my_array[x]),
-        print("\ntotal number of times random number generate "+str(count))
+        print("\ntotal number of times random number generate : "+str(count))
 
     def twod_int_array(self,):
         rows = int(input(" enter the number of rows : "))
@@ -118,7 +143,11 @@ class Utility():
                         input_value = int(input(" enter the value : "))
                         break
                     except NameError:
-                        print("enter integer value only...try again")
+                            print("enter boolean value...try again\n")
+                    except OverflowError:
+                            print("given number is very high...try again")
+                    except SyntaxError:
+                            print("check the given input and try again")
                 int_array[i].append(input_value)
         for i in range(rows):
             for j in range(columns):
@@ -184,17 +213,17 @@ class Utility():
         var_result=math.sqrt(math.pow(var_x, 2)+math.pow(var_y,2))
         print("The Euclidean distance of "+str(var_x)+" and "+str(var_y)+" is : "+str(var_result))
 
-    # global permute
-    def permute(self,var_str,var_left,var_right):
+
+    def permute(self,var_str, var_left, var_right):
         if(var_left==var_right):
                 print(var_str)
         else:
             for x in range(var_left,var_right+1):
-                var_str=self.swap(var_str,var_left,x)
-                permute(var_str,var_left+1,var_right)
+                var_str=self.swap(var_str, var_left, x)
+                self.permute(var_str, var_left+1, var_right)
 
 
-    def swap(var_str,var_left,var_right):
+    def swap(self,var_str,var_left,var_right):
         temp=0
         my_list=list(var_str)
         temp=my_list[var_left]

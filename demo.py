@@ -4,7 +4,12 @@ from DataStructures.LinkedList import *
 from DataStructures.Node import *
 import random
 
-
+var_list=[]
+var_list.append(200)
+var_list.append(39)
+print(var_list)
+if(200 in var_list):
+    print("yes")
 # print(random.uniform(0,1))
 # print(random.randint(0,20))
 # numberOfTimes = int(raw_input("Please the number of times to Flip Coin "))
@@ -81,22 +86,22 @@ import random
 #     obj=Node(20)
 #     obj2=obj
 #     print("data "+str(obj2.data))
-from Queue import *
-class demoa:
-
-  
-
-    list = LinkedList()
-
-    list.add(30)
-    list.add("you")
-    list.add(40)
-    list.add(10)
-    list.add(20)
-
-    list.display()
-    flag = list.search("you")
-    if flag is True:
-        print "found"
-    else:
-        print "not found"
+# from Queue import *
+# class demoa:
+#
+#
+#
+#     list = LinkedList()
+#
+#     list.add(30)
+#     list.add("you")
+#     list.add(40)
+#     list.add(10)
+#     list.add(20)
+#
+#     list.display()
+#     flag = list.search("you")
+#     if flag is True:
+#         print "found"
+#     else:
+#         print "not found"

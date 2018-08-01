@@ -41,7 +41,7 @@ class Stack:
     def display(self):
         temp = self.head
         while(temp.next_node != None):
-            print(str(temp.data)+" "),
+            print(str(temp.data)+""),
             temp = temp.next_node
         print(temp.data)
 
@@ -51,5 +51,5 @@ class Stack:
         else:
             return False
 
-    def size(self):
+    def size_of_stack(self):
         return self.size

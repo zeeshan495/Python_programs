@@ -2,6 +2,27 @@
 import math
 class Utility:
 
+
+    def input_int_data(self):
+        while True:
+            try:
+                var_input = int(input())
+                return var_input
+                break
+            except NameError:
+                print("please enter a integer...try again")
+            except NameError:
+                print("please enter integer value")
+            except SyntaxError:
+                print("Check the entered input and try again")
+            except MemoryError:
+                print("Check the entered input and try again")
+            except OverflowError:
+                print("Entered number is very high")
+            except Exception:
+                print("exception...something went wrong")
+
+
     def annagram(self,var_str1,var_str2):
         var_nospace_str1=var_str1.replace(" ","")
         var_nospace_str2=var_str2.replace(" ","")
@@ -109,15 +130,15 @@ class Utility:
             print(" please enter valid option : ")
             return self.guessing(var_low,var_high)
 
-    def binary_search(self,my_array,var_low,var_high,var_key):
+    def binary_search(self,my_array, var_low, var_high, var_key):
         if(var_low <= var_high):
             var_mid = var_low+(var_high-var_low)/2
             if(my_array[var_mid] == var_key):
                 print(" key found at : "+str(var_mid+1))
             elif(my_array[var_mid] > var_key):
-                self.binarysearch(my_array,var_low,var_mid-1,var_key)
+                self.binary_search(my_array, var_low, var_mid-1, var_key)
             elif(my_array[var_mid] < var_key):
-                self.binarysearch(my_array,var_mid+1,var_high,var_key)
+                self.binary_search(my_array, var_mid+1, var_high, var_key)
         else:
             print(" key not found ")
 

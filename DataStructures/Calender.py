@@ -17,14 +17,19 @@ class Calender:
     if(var_month == 2) and (utility.is_leap_year(var_year)):
         days_array[var_month] = 29
 
-    print(" "+str(months_array[var_month])+" "+str(var_year))
-    print(" \tS\t\tM\t\tTu\t\tWe\t\tTh\t\tF\t\tSa")
+    print("\t\t---------------------"+str(months_array[var_month])+" "+str(var_year)+"---------------------\n")
+    week_arr = ["S","M","TU","W","TH","F","SA"]
+    for x in range(0,len(week_arr)):
+        value = format(str(week_arr[x]), " >8s")
+        print(value),
+    print("\n")
     var_day = utility.day_of_week(1,var_month,var_year)
     for x in range(0,var_day):
-        print(" "),
+        value = format("", ">8s")
+        print(value),
     for x in range(1,days_array[var_month]+1):
         # print ' '+str(x),
-        value = format(str(x)," >6s")
+        value = format(str(x)," >8s")
         print(value),
         if((x + var_day) % 7 == 0) or(x == days_array[var_month]):
             print("\n")

@@ -2,11 +2,12 @@
 from Utility import *
 class ExtendAnnagram:
     utility=Utility()
-    while True:
-        try:
-            var_input = int(input("please enter a Nth Term "))
-            break
-        except NameError:
-            print("please enter integer value")
-    result_array = utility.primenumber(var_input)
-    utility.extend_annagram(result_array)
+    try:
+        print("please enter integer value")
+        var_input = utility.input_int_data()
+        if(var_input == 0) or (var_input == 1):
+            print(" no prime numbers")
+        result_array = utility.primenumber(var_input)
+        utility.extend_annagram(result_array)
+    except OverflowError :
+        print("Overflow....please check the input")

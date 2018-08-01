@@ -9,4 +9,4 @@ class WindChill:
             break
         except NameError :
             print("please enter integer values")
-        utility.weather(var_t, var_v)
+    utility.weather(var_t, var_v)
