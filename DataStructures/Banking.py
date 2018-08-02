@@ -12,7 +12,6 @@ class Banking:
 print("\t***welcome to our bank***")
 print("first add in queue...then go for transactions :\n")
 
-
 def counter():
     print("Enter the 1 amount to deposit \nEnter the 2 amount to withdraw\n")
     choice = utility.input_int_data()
@@ -32,7 +31,7 @@ def counter():
             print("insufficient balance ")
             que.bank_cash = que.bank_cash + withdraw
             counter()
-        print("present cash bank "+str(que.bank_cash))
+        print("present cash bank '"+str(que.bank_cash)+"'")
         que.dequeue()
         operation()
     elif(choice != 1) and (choice !=2):
@@ -43,7 +42,7 @@ def counter():
         operation()
 
 def operation():
-    print("enter 1 to add in a queue \nEnter 2 for transaction \nEnter 3 for present customers in queue \n")
+    print("enter 1 to add in a queue \nEnter 2 for transaction \nEnter 3 for present customers in queue \nEnter 4 for Bank balance\n")
     choice = utility.input_int_data()
     if(choice == 1):
         result = que.enqueue(1)
@@ -61,6 +60,10 @@ def operation():
             counter()
     elif(choice == 3):
         print("present customers in queue : "+str(que.queue_size))
+        operation()
+
+    elif(choice == 4):
+        print("present cash bank '" + str(que.bank_cash)+"'")
         operation()
     else:
         print("invalid number....try again")

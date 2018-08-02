@@ -89,8 +89,6 @@ if(200 in var_list):
 # from Queue import *
 # class demoa:
 #
-#
-#
 #     list = LinkedList()
 #
 #     list.add(30)

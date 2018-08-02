@@ -22,6 +22,45 @@ class Utility:
             except Exception:
                 print("exception...something went wrong")
 
+    def input_str_data(self):
+        while True:
+            try:
+                var_input = raw_input()
+                return var_input
+                break
+            except NameError:
+                print("please enter a string...try again")
+            except NameError:
+                print("please enter integer value")
+            except SyntaxError:
+                print("Check the entered input and try again")
+            except MemoryError:
+                print("Check the entered input and try again")
+            except OverflowError:
+                print("Entered number is very high")
+            except Exception:
+                print("exception...something went wrong")
+
+
+    def input_float_data(self):
+        while True:
+            try:
+                var_input = float(input())
+                return var_input
+                break
+            except NameError:
+                print("please enter a string...try again")
+            except NameError:
+                print("please enter integer value")
+            except SyntaxError:
+                print("Check the entered input and try again")
+            except MemoryError:
+                print("Check the entered input and try again")
+            except OverflowError:
+                print("Entered number is very high")
+            except Exception:
+                print("exception...something went wrong")
+
 
     def annagram(self,var_str1,var_str2):
         var_nospace_str1=var_str1.replace(" ","")
@@ -117,14 +156,12 @@ class Utility:
         var_mid=(var_low+var_high)/2
         if(var_mid == var_high):
             return var_mid
-        print(" if it is "+str(var_mid)+" then enter 'stop'")
-        print(" if it is less than "+str(var_mid)+" then enter 'YES' otherwise 'NO'")
-        var_option=raw_input()
-        if(var_option.lower()=="stop"):
-            return var_mid
-        elif(var_option.lower()=="yes"):
+        # print(" if it is "+str(var_mid)+" then enter 'stop'")
+        print(" 1 - "+str(var_mid)+" then enter '1' \n "+str(var_mid + 1)+" - "+str(var_high)+" then enter '2'")
+        var_option=self.input_int_data()
+        if(var_option == 1):
             return  self.guessing(var_low,var_mid)
-        elif(var_option.lower()=="no"):
+        elif(var_option == 2):
             return self.guessing(var_mid+1,var_high)
         else:
             print(" please enter valid option : ")
@@ -227,7 +264,8 @@ class Utility:
         var_note=0
         for x in range(0,len(my_array)):
             var_number=var_amount/my_array[x]
-            print(" "+str(my_array[x])+" x "+str(var_number))
+            padding = format(""," <4s")
+            print(" "+str(my_array[x])+""+str(padding)+"x"+str(padding)+""+str(var_number))
             var_amount=var_amount%my_array[x]
             var_note=var_note + var_number
 
@@ -242,19 +280,24 @@ class Utility:
         return var_d;
 
     def celsius(self):
-        var_fahrenheit = int(input("enter fahrenheit temperature : "))
+        print("enter fahrenheit temperature : ")
+        var_fahrenheit = self.input_int_data()
         var_celsius = (var_fahrenheit - 32) * 5 / 9;
         print(" In celsius : "+str(var_celsius))
 
     def fahrenheit(self):
-        var_celsius = int(input("enter fahrenheit temperature : "))
+        print("enter celsius temperature : ")
+        var_celsius = self.input_int_data()
         var_fahrenheit = (var_celsius * 9 / 5) + 32
         print(" In farenheit : "+str(var_fahrenheit))
 
     def calculation(self,var_principal,var_interest,var_year):
         var_n = 12 * var_year
-        var_r = var_interest / (12*100)
-        var_payment = (var_principal * var_r) / (1 - math.pow((1+var_r),(-var_n)))
+        if(var_interest == 0):
+            var_payment = (var_principal/(var_year*12))
+        else:
+            var_r = var_interest / (12*100)
+            var_payment = (var_principal * var_r) / (1 - math.pow((1+var_r),(-var_n)))
         print(" monthly payment : "+str(var_payment))
 
     def calculate_sqrt(self,var_input):
@@ -287,8 +330,6 @@ class Utility:
         var_temp = ""
         char_array = list(var_binary)
         var_power = len(char_array)-1
-        print(" length of char array : "+str(len(char_array)))
-        print("char array "+str(char_array))
         print(" ")
         for x in range(0,len(char_array)):
             var_index_value =char_array[x]

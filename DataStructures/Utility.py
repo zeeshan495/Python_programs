@@ -11,8 +11,7 @@ class Utility:
             file.write(" ")
         else:
             while(head != None):
-                file.write(head.data)
-                file.write(" ")
+                file.write(str(head.data)+" ")
                 head = head.next_node
 
     def input_int_data(self):
@@ -27,6 +26,45 @@ class Utility:
                 print("given number is very high...try again")
             except SyntaxError:
                 print("check the given input and try again")
+
+    def input_str_data(self):
+        while True:
+            try:
+                var_input = raw_input()
+                return var_input
+                break
+            except NameError:
+                print("please enter a string...try again")
+            except NameError:
+                print("please enter integer value")
+            except SyntaxError:
+                print("Check the entered input and try again")
+            except MemoryError:
+                print("Check the entered input and try again")
+            except OverflowError:
+                print("Entered number is very high")
+            except Exception:
+                print("exception...something went wrong")
+
+
+    def input_float_data(self):
+        while True:
+            try:
+                var_input = float(input())
+                return var_input
+                break
+            except NameError:
+                print("please enter a string...try again")
+            except NameError:
+                print("please enter integer value")
+            except SyntaxError:
+                print("Check the entered input and try again")
+            except MemoryError:
+                print("Check the entered input and try again")
+            except OverflowError:
+                print("Entered number is very high")
+            except Exception:
+                print("exception...something went wrong")
 
     def factorial(self,var_input):
         var_fact = 1

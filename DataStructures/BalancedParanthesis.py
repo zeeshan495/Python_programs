@@ -1,11 +1,13 @@
 
 
 from Stack import *
+from Utility import *
 class BalancedParanthesis:
-
+    utility = Utility()
     stack = Stack()
-
-    var_input = "((5+6)*(7+8)/(4+3)(5+6)*(7+8)/(4+3))"
+    # var_input = "((5+6)*(7+8)/(4+3)(5+6)*(7+8)/(4+3))"
+    print("please enter expression")
+    var_input = utility.input_str_data()
     my_array = list(var_input)
     open_para = "("
     close_para = ")"

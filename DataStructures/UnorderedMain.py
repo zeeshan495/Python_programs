@@ -9,14 +9,19 @@ def main():
     if file.mode == 'r':
         contents = file.read()
     print(contents)
-    my_array = contents.split(" ")
+    temp_array = contents.split(" ")
+    my_array =[]
+    # for removing spaces
+    for x in range(0, len(temp_array)):
+        if (temp_array[x] != ""):
+            my_array.append(temp_array[x])
     new_word = raw_input("please enter a word : ")
     # list.operation(my_array, new_word, file_name)
 
     for x in range(0, len(my_array)):
         list.add(my_array[x])
     flag = list.search(new_word)
-    print(" flag ", flag)
+
     if (flag == False):
         list.add(new_word)
     else:

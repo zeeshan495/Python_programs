@@ -3,7 +3,8 @@ from Utility import *
 class ExtendAnnagram:
     utility=Utility()
     try:
-        print("please enter integer value")
+        print("to find annagram from prime numbers")
+        print("please enter a range")
         var_input = utility.input_int_data()
         if(var_input == 0) or (var_input == 1):
             print(" no prime numbers")

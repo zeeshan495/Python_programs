@@ -12,8 +12,16 @@ def main():
         if file.mode == 'r':
             contents = file.read()
         print(contents)
-        my_array = contents.split(" ")
-        new_word = raw_input("please enter a word : ")
+        temp_array = contents.split(" ")
+        my_array = []
+
+        # for removing spaces
+        for x in range(0,len(temp_array)):
+            if(temp_array[x] != ""):
+                my_array.append(temp_array[x])
+
+        print("please enter a number")
+        new_word = utility.input_str_data()
 
         for x in range(0, len(my_array)):
             list.add(my_array[x])

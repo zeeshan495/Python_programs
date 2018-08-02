@@ -1,8 +1,8 @@
 
 from Utility import *
-class InsertionSort:
+class MergeSort:
     utility = Utility()
-    print("enter the number of words for insertion sort : ")
+    print("enter the number of words for merge sort : ")
     var_input = utility.input_int_data()
     if (var_input <= 0):
         print("please check the input : ")
@@ -12,8 +12,8 @@ class InsertionSort:
         for x in range(0, var_input):
             my_array[x] = raw_input()
         my_array.sort()
-        sort_array = utility.insertion_sort(my_array)
-        print("after insertion sort : ")
+        sort_array = utility.merge_sort(my_array)
+        print("after Merge sort : ")
         for x in range(0, len(sort_array)):
             print(sort_array[x]),
         print("\n")
