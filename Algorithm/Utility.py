@@ -170,6 +170,7 @@ class Utility:
     def binary_search(self,my_array, var_low, var_high, var_key):
         if(var_low <= var_high):
             var_mid = var_low+(var_high-var_low)/2
+
             if(my_array[var_mid] == var_key):
                 print(" key found at : "+str(var_mid+1))
             elif(my_array[var_mid] > var_key):
@@ -277,7 +278,7 @@ class Utility:
         var_mo = var_month + 12 * ((14-var_month)/12) -2
         var_d = (var_day + var_xo + (31 * var_mo)/12)%7
 
-        return var_d;
+        return var_d
 
     def celsius(self):
         print("enter fahrenheit temperature : ")
@@ -291,13 +292,13 @@ class Utility:
         var_fahrenheit = (var_celsius * 9 / 5) + 32
         print(" In farenheit : "+str(var_fahrenheit))
 
-    def calculation(self,var_principal,var_interest,var_year):
+    def calculation(self,var_principle,var_interest,var_year):
         var_n = 12 * var_year
         if(var_interest == 0):
-            var_payment = (var_principal/(var_year*12))
+            var_payment = (var_principle/(var_year*12))
         else:
             var_r = var_interest / (12*100)
-            var_payment = (var_principal * var_r) / (1 - math.pow((1+var_r),(-var_n)))
+            var_payment = (var_principle * var_r) / (1 - math.pow((1+var_r),(-var_n)))
         print(" monthly payment : "+str(var_payment))
 
     def calculate_sqrt(self,var_input):

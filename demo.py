@@ -3,13 +3,13 @@ import math
 from DataStructures.LinkedList import *
 from DataStructures.Node import *
 import random
-
-var_list=[]
-var_list.append(200)
-var_list.append(39)
-print(var_list)
-if(200 in var_list):
-    print("yes")
+#
+# var_list=[]
+# var_list.append(200)
+# var_list.append(39)
+# print(var_list)
+# if(200 in var_list):
+#     print("yes")
 # print(random.uniform(0,1))
 # print(random.randint(0,20))
 # numberOfTimes = int(raw_input("Please the number of times to Flip Coin "))
@@ -103,3 +103,9 @@ if(200 in var_list):
 #         print "found"
 #     else:
 #         print "not found"
+
+class abc:
+    def asd(self):
+        print("abc")
+if __name__ == '__main__':
+    asd()
