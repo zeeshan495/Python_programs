@@ -11,7 +11,8 @@ class DataManage:
         # print(type(inventory))
         for x in inventory:
             # for y in inventory[x]:
-                print("price "+str(inventory[x]["price"]))
                 print("Name " + str(inventory[x]["Name"]))
+                print("price "+str(inventory[x]["price"]))
                 print("weight " + str(inventory[x]["weight"]))
+                print("Total Price " + str(inventory[x]["weight"]*inventory[x]["price"]))
                 print("\n")

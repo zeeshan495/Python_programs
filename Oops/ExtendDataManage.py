@@ -3,12 +3,11 @@ from Utility import *
 from Product import *
 
 
-class ExtendDataManage:
+class ExtendDataManage():
     global utility
     utility = Utility()
 
 my_list = {}
-
 def main():
     while True:
         print("\tenter a choice : ")
@@ -32,10 +31,12 @@ def main():
             break
         info = add(name)
 
-        my_list[info.get_name()] = {"price": info.get_price(), "type": info.get_type(), "weight": info.get_weight()}
+        if info.get_name() in my_list:
+            my_list[info.get_name()].append({"price": info.get_price(), "type": info.get_type(), "weight": info.get_weight()})
+        else:
+            my_list[info.get_name()] = [{"price": info.get_price(), "type": info.get_type(), "weight": info.get_weight()}]
 
         save()
-
 
 def add(name):
     print("enter the type of " + str(name))
@@ -55,12 +56,16 @@ def save():
 
 def calculation():
     for x in my_list:
-        print(my_list[x])
-        print("type : "+str(my_list[x]["type"])+"\n"),
-        print("price : " + str(my_list[x]["price"]) + "\n"),
-        print("weight : " + str(my_list[x]["weight"]) + "\n"),
-        print("Total Price of "+str(my_list[x]["type"])+" : " + str(my_list[x]["price"]*my_list[x]["weight"]) + "\n"),
-        print("\n")
+
+        for y in range(0,len(my_list[x])):
+            # print(my_list[x][0])
+            # print("type : " + str(my_list[x][0]["type"]) + "\n")
+
+            print("type : "+str(my_list[x][y]["type"])+"\n"),
+            print("price : " + str(my_list[x][y]["price"]) + "\n"),
+            print("weight : " + str(my_list[x][y]["weight"]) + "\n"),
+            print("Total Price of "+str(my_list[x][y]["type"])+" : " + str(my_list[x][y]["price"]*my_list[x][y]["weight"]) + "\n"),
+            print("\n")
 
 main()
 

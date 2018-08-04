@@ -1,1 +1,1 @@
-{"1": {"price": 10, "Name": "Wheat", "weight": 400},"2": {"price": 20, "Name": "rice", "weight": 300}, "3": {"price": 30, "Name": "pulses", "weight": 500} }
+{"1": {"Name": "Wheat","price": 10,  "weight": 400},"2": {"Name": "rice","price": 20,  "weight": 300}, "3": {"Name": "pulses","price": 30,  "weight": 500} }
