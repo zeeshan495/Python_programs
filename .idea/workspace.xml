@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da53bd7-9eae-4acf-b4db-a478096ef2b0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/AddressBook/AddressBookImplementation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AddressBook/AddressBookMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/AddressBook/AddressBookMain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AddressBook/ManagerImplementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/AddressBook/ManagerImplementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JsonFiles/extendDataManage.json" beforeDir="false" afterPath="$PROJECT_DIR$/JsonFiles/extendDataManage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oops/DataManage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Oops/DataManage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,41 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Utility.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Oops/Utility.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2130">
-              <caret line="145" column="35" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
-              <folding>
-                <element signature="e#1#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Person.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AddressBook/Person.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressBook.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AddressBook/AddressBook.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressBookMain.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddressBookMain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AddressBook/AddressBookMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="150">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding>
+                <element signature="e#1#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +34,8 @@
       <file leaf-file-name="ManagerImplementation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AddressBook/ManagerImplementation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="-135">
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#2#34#0" expanded="true" />
               </folding>
@@ -66,44 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddressBookManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AddressBook/AddressBookManager.py">
+      <file leaf-file-name="banglore.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AddressJson/banglore.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InterfaceDemo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Oops/InterfaceDemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtendDataManage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Oops/ExtendDataManage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -132,10 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/functional/Utility.py" />
-        <option value="$PROJECT_DIR$/Algorithm/ExtendAnnagram.py" />
-        <option value="$PROJECT_DIR$/Algorithm/MenuDriven.py" />
-        <option value="$PROJECT_DIR$/Algorithm/GuessNumber.py" />
         <option value="$PROJECT_DIR$/Algorithm/BubbleSort.py" />
         <option value="$PROJECT_DIR$/Algorithm/BinarySearch.py" />
         <option value="$PROJECT_DIR$/Algorithm/InsertionSort.py" />
@@ -165,24 +105,28 @@
         <option value="$PROJECT_DIR$/Oops/demo.py" />
         <option value="$PROJECT_DIR$/Algorithm/ExtendPalindrome.py" />
         <option value="$PROJECT_DIR$/Algorithm/Utility.py" />
-        <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/Oops/RegexReplace.py" />
         <option value="$PROJECT_DIR$/Oops/DeckOfCards.py" />
         <option value="$PROJECT_DIR$/Oops/Utility.py" />
         <option value="$PROJECT_DIR$/Oops/ExtendDeck.py" />
         <option value="$PROJECT_DIR$/DataStructures/QueueLinkedList.py" />
         <option value="$PROJECT_DIR$/JsonFiles/extendDataManage.json" />
-        <option value="$PROJECT_DIR$/JsonFiles/DataManagment.json" />
-        <option value="$PROJECT_DIR$/Oops/DataManage.py" />
         <option value="$PROJECT_DIR$/Oops/StockReport.py" />
         <option value="$PROJECT_DIR$/JsonFiles/StockReport.json" />
         <option value="$PROJECT_DIR$/Oops/ExtendDataManage.py" />
         <option value="$PROJECT_DIR$/Oops/InterfaceDemo.py" />
         <option value="$PROJECT_DIR$/AddressBook/AddressBook.py" />
         <option value="$PROJECT_DIR$/AddressBook/AddressBookManager.py" />
+        <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/JsonFiles/DataManagment.json" />
         <option value="$PROJECT_DIR$/AddressBook/Person.py" />
+        <option value="$PROJECT_DIR$/Oops/DataManage.py" />
+        <option value="$PROJECT_DIR$/AddressJson/demo2.json" />
         <option value="$PROJECT_DIR$/AddressBook/AddressBookMain.py" />
+        <option value="$PROJECT_DIR$/AddressJson/new.json" />
         <option value="$PROJECT_DIR$/AddressBook/ManagerImplementation.py" />
+        <option value="$PROJECT_DIR$/AddressJson/banglore.json" />
+        <option value="$PROJECT_DIR$/AddressBook/AddressBookImplementation.py" />
       </list>
     </option>
   </component>
@@ -216,6 +160,16 @@
             <path>
               <item name="Zeeshan_Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Zeeshan_Python" type="462c0819:PsiDirectoryNode" />
+              <item name="AddressJson" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zeeshan_Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zeeshan_Python" type="462c0819:PsiDirectoryNode" />
+              <item name="JsonFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zeeshan_Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zeeshan_Python" type="462c0819:PsiDirectoryNode" />
               <item name="Oops" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -226,6 +180,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AddressJson" />
       <recent name="$PROJECT_DIR$/JsonFiles" />
       <recent name="$PROJECT_DIR$/Oops" />
       <recent name="$PROJECT_DIR$" />
@@ -244,7 +199,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.InterfaceDemo">
+  <component name="RunManager" selected="Python.AddressBookMain">
+    <configuration name="AddressBookMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Zeeshan_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AddressBook" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AddressBook/AddressBookMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Banking" type="PythonConfigurationType" factoryName="Python">
       <module name="Zeeshan_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -299,24 +272,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ExtendDeck" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Zeeshan_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Oops" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Oops/ExtendDeck.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="FlipCoin" type="PythonConfigurationType" factoryName="Python">
       <module name="Zeeshan_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -335,7 +290,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="InterfaceDemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ManagerImplementation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Zeeshan_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,17 +298,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Oops" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AddressBook" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Oops/InterfaceDemo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AddressBook/ManagerImplementation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="StockReport" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Zeeshan_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -361,11 +316,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Oops" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Oops/StockReport.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -374,19 +329,19 @@
     <list>
       <item itemvalue="Python.Banking" />
       <item itemvalue="Python.FlipCoin" />
-      <item itemvalue="Python.ExtendDeck" />
+      <item itemvalue="Python.ManagerImplementation" />
+      <item itemvalue="Python.AddressBookMain" />
       <item itemvalue="Python.ExtendDataManage" />
+      <item itemvalue="Python.demo" />
       <item itemvalue="Python.DataManage" />
-      <item itemvalue="Python.StockReport" />
-      <item itemvalue="Python.InterfaceDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.InterfaceDemo" />
-        <item itemvalue="Python.StockReport" />
+        <item itemvalue="Python.AddressBookMain" />
         <item itemvalue="Python.DataManage" />
         <item itemvalue="Python.ExtendDataManage" />
-        <item itemvalue="Python.ExtendDeck" />
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.ManagerImplementation" />
       </list>
     </recent_temporary>
   </component>
@@ -407,12 +362,12 @@
     <frame x="60" y="-11" width="1307" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24597701" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24597701" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.36858237" side_tool="true" weight="0.34789157" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.63141763" weight="0.44277108" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.63141763" visible="true" weight="0.44277108" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -428,23 +383,23 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.63141763" visible="true" weight="0.32831326" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24597701" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.63141763" visible="true" weight="0.32831326" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3298193" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Python Console" order="0" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3990964" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.36858237" side_tool="true" weight="0.34789157" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3298193" />
-      <window_info anchor="bottom" id="Python Console" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -456,35 +411,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DataStructures/PrimeStack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="285" selection-start-line="285" selection-end-line="285" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Oops/demoJson.json" />
-    <entry file="file:///usr/lib/python2.7/json/encoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsonFiles/demoJson.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataStructures/Utility.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -496,13 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Oops/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
@@ -667,16 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functional/Utility.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
@@ -705,24 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JsonFiles/extendDataManage.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="255" selection-start-column="255" selection-end-column="255" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functional/CouponNumber.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsonFiles/DataManagment.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -733,27 +628,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Oops/DataManage.py">
+    <entry file="file://$PROJECT_DIR$/Oops/StockReport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="150">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Oops/Utility.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="145" column="35" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
-          <folding>
-            <element signature="e#1#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/AddressBook/AddressJsondemo2.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/AddressBook/Person.py">
+    <entry file="file://$PROJECT_DIR$/Oops/InterfaceDemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        <state relative-caret-position="285">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -764,34 +652,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Oops/Product.py">
+    <entry file="file://$PROJECT_DIR$/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Oops/ExtendDataManage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="255">
+          <caret line="109" column="20" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Oops/StockReport.py">
+    <entry file="file://$PROJECT_DIR$/AddressBook/Person.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Oops/InterfaceDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -802,20 +676,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AddressBook/ManagerImplementation.py">
+    <entry file="file://$PROJECT_DIR$/Oops/Product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Oops/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsonFiles/DataManagment.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="156" selection-start-column="156" selection-end-column="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsonFiles/extendDataManage.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="173" lean-forward="true" selection-start-column="173" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Oops/DataManage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Oops/ExtendDataManage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddressJson/demo2.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Oops/Utility.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddressJson/new.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddressBook/AddressBookMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddressBook/AddressBookImplementation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding>
+            <element signature="e#1#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddressBook/ManagerImplementation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#2#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AddressBook/AddressBookMain.py">
+    <entry file="file://$PROJECT_DIR$/AddressJson/banglore.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>

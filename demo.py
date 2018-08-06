@@ -104,8 +104,7 @@ import random
 #     else:
 #         print "not found"
 
-class abc:
-    def asd(self):
-        print("abc")
-if __name__ == '__main__':
-    asd()
+my_list=[]
+print(my_list)
+if(my_list == []):
+    print("yes empty")

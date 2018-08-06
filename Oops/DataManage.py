@@ -6,9 +6,10 @@ class DataManage:
         # s = f.read()
         # print(s)
         inventory = json.load(f)
-        # print(inventory)
+        print(inventory)
         # print(type(s))
         # print(type(inventory))
+        print(inventory["1"])
         for x in inventory:
             # for y in inventory[x]:
                 print("Name " + str(inventory[x]["Name"]))

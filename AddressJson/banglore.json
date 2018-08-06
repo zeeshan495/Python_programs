@@ -1,0 +1,18 @@
+{
+  "zeeshan": {
+    "city": "nandyal",
+    "first_name": "zeeshan",
+    "last_name": "shaik'",
+    "zip": "8888",
+    "phone": "12343",
+    "state": "ap"
+  },
+  "zakir": {
+    "city": "chenur",
+    "first_name": "zakir",
+    "last_name": "shaik",
+    "zip": "3455",
+    "phone": "6577",
+    "state": "ap"
+  }
+}
