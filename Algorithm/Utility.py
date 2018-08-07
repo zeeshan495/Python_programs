@@ -181,23 +181,25 @@ class Utility:
             print(" key not found ")
 
     def insertion_sort(self,my_array):
-        for x in range(0,len(my_array)):
-            var_key=my_array[x]
-            for y in range(x-1, -1, -1):
-                if(var_key < my_array[y]):
-                    var_temp=my_array[y]
-                    my_array[y]=my_array[y+1]
-                    my_array[y+1]=var_temp
+        for index in range(1,len(my_array)):
+            var_key=my_array[index]
+            var_x = index-1
+            while var_x >= 0:
+                if(var_key < my_array[var_x]):
+                    my_array[var_x+1]=my_array[var_x]
+                    my_array[var_x]=var_key
+                    var_x -=  1
+                else:
+                    break
         return my_array
 
     def bubble_sort(self,my_array):
-        var_temp=0
-        for x in range(0,len(my_array)-2):
-            for y in range(0, len(my_array)-2-x):
-                if(my_array[y]>my_array[y+1]):
-                    var_temp=my_array[y]
-                    my_array[y]=my_array[y+1]
-                    my_array[y+1]=var_temp
+        for x in range(0,len(my_array)):
+            for y in range(0, len(my_array)-1 ):
+                if(my_array[y] > my_array[y+1]):
+                    var_temp = my_array[y]
+                    my_array[y] = my_array[y+1]
+                    my_array[y+1] = var_temp
         return my_array
 
     def merge_sort(self,my_array):
@@ -261,7 +263,7 @@ class Utility:
         return result_array
 
     def counting_notes(self,var_amount):
-        my_array=[1000,500,100,50,10,5,2,1]
+        my_array=[2000,1000,500,100,50,10,5,2,1]
         var_note=0
         for x in range(0,len(my_array)):
             var_number=var_amount/my_array[x]

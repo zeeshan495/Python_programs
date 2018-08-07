@@ -2,9 +2,11 @@
 
 from Utility import *
 from QueueLinkedList import *
+from Deque import *
 class CalenderQueue:
     utility = Utility()
     que = QueueLinkedList()
+    que2 = Deque()
     print("enter a month : ")
     var_month = utility.input_int_data()
     print("enter a year : ")
@@ -36,6 +38,12 @@ class CalenderQueue:
         for x in range(1, days_array[var_month] + 1):
             value = format(str(x), " >8s")
             que.add_rear(value)
+            que2.add_rear(value)
+
             if ((x + var_day) % 7 == 0) or (x == days_array[var_month]):
                 que.add_rear("\n")
         que.display()
+
+        for x in range(1, days_array[var_month] + 1):
+            que2.remove_front()
+            que2.remove_rear()

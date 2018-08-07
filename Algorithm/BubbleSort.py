@@ -11,7 +11,7 @@ class BubbleSort:
         print(" enter values ")
         for x in range(0, var_input):
             my_array[x] = raw_input()
-        my_array.sort()
+        print(my_array)
         sort_array = utility.bubble_sort(my_array)
         print("after Bubble sort : ")
         for x in range(0, len(sort_array)):

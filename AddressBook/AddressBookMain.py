@@ -22,6 +22,8 @@ class AddressBookMain:
             manager.read_files()
             manager.operation()
         elif choice == 3:
-            print("closed")
+            print("Address book was closed..........Thanking You")
             break
+        else:
+            print("invalid choice")
             

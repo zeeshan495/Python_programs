@@ -6,7 +6,7 @@ class DataManage:
         # s = f.read()
         # print(s)
         inventory = json.load(f)
-        print(inventory)
+        # print(inventory)
         # print(type(s))
         # print(type(inventory))
         print(inventory["1"])

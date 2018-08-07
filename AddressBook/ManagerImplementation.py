@@ -1,5 +1,4 @@
 
-
 from AddressBookManager import *
 from Oops.Utility import *
 from AddressBookImplementation import *
@@ -23,7 +22,6 @@ class ManagerImplementation(AddressBookManager):
     def read_files(self):
         path = "/home/bridgeit/Zeeshan_Python/AddressJson"
         dirs = os.listdir(path)
-        print("read_files")
         for files in dirs:
             print(files)
 

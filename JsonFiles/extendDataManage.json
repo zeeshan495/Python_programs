@@ -1,1 +1,1 @@
-{"wheat": [{"price": 87, "type": "brown", "weight": 65}], "rice": [{"price": 23, "type": "basmati", "weight": 45}], "pulses": [{"price": 45, "type": "small", "weight": 67}]}
+{"wheat": [{"price": 6, "type": "brown", "weight": 3}], "rice": [{"price": 4, "type": "basmati", "weight": 9}], "pulses": [{"price": 6, "type": "small", "weight": 7}, {"price": 34, "type": "large", "weight": 8}]}
