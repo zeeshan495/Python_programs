@@ -1,0 +1,99 @@
+{
+  "appointment": [
+    {
+      "date": "2018-08-08",
+      "doctor": {
+        "zeeshan": {
+          "avialability": "both",
+          "doctor_id": 88,
+          "doctor_name": "zeeshan",
+          "specialization": "heart"
+        }
+      },
+      "patient": {
+        "raj": {
+          "age": 26,
+          "number": 976854356,
+          "patient_id": 90,
+          "patient_name": "raj"
+        }
+      }
+    },
+    {
+      "date": "2018-08-08",
+      "doctor": {
+        "zeeshan": {
+          "avialability": "both",
+          "doctor_id": 88,
+          "doctor_name": "zeeshan",
+          "specialization": "heart"
+        }
+      },
+      "patient": {
+        "sai": {
+          "age": 45,
+          "number": 9876786546,
+          "patient_id": 43,
+          "patient_name": "sai"
+        }
+      }
+    },
+    {
+      "date": "2018-08-08",
+      "doctor": {
+        "zeeshan": {
+          "avialability": "both",
+          "doctor_id": 88,
+          "doctor_name": "zeeshan",
+          "specialization": "heart"
+        }
+      },
+      "patient": {
+        "prasad": {
+          "age": 27,
+          "number": 93456346435,
+          "patient_id": 87,
+          "patient_name": "prasad"
+        }
+      }
+    },
+    {
+      "date": "2018-08-08",
+      "doctor": {
+        "zeeshan": {
+          "avialability": "both",
+          "doctor_id": 88,
+          "doctor_name": "zeeshan",
+          "specialization": "heart"
+        }
+      },
+      "patient": {
+        "kumar": {
+          "age": 39,
+          "number": 9087685756,
+          "patient_id": 76,
+          "patient_name": "kumar"
+        }
+      }
+    },
+    {
+      "date": "2018-08-08",
+      "doctor": {
+        "zeeshan": {
+          "avialability": "both",
+          "doctor_id": 88,
+          "doctor_name": "zeeshan",
+          "specialization": "heart"
+        }
+      },
+      "patient": {
+        "vilok": {
+          "age": 29,
+          "number": 90807060,
+          "patient_id": 56,
+          "patient_name": "vilok"
+        }
+      }
+    }
+  ]
+}

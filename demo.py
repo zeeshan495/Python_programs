@@ -103,8 +103,10 @@ import random
 #         print "found"
 #     else:
 #         print "not found"
+my_list = {"zeeshan": {"doctor_id": 88, "specialization": "heart", "doctor_name": "zeeshan", "avialability": "both"}, "nikil": {"doctor_id": 99, "specialization": "eye", "doctor_name": "nikil", "avialability": "am"}}
+for x in my_list:
 
-my_list=[]
-print(my_list)
-if(my_list == []):
-    print("yes empty")
+    if "zxcv" in x:
+        print("true")
+if "zeeshan" in my_list:
+    print("true")

@@ -85,13 +85,15 @@ class AddressBookImplementation(AddressBook):
 
     def add_person(self):
         user = self.add_user()
-
-        if user.get_first_name in self.my_list:
-            self.my_list[user.get_first_name()].append({"first_name": user.get_first_name(), "last_name": user.get_last_name(), "city": user.get__city(),
-              "state": user.get__state(), "phone": user.get__phone_number(), "zip": user.get__zip()})
-        else:
-            self.my_list[user.get_first_name()] = {"first_name": user.get_first_name(), "last_name": user.get_last_name(), "city": user.get__city(),
-              "state": user.get__state(), "phone": user.get__phone_number(), "zip": user.get__zip()}
+        try:
+            if user.get_first_name() in self.my_list:
+                self.my_list[user.get_first_name()].append({"first_name": user.get_first_name(), "last_name": user.get_last_name(), "city": user.get__city(),
+                  "state": user.get__state(), "phone": user.get__phone_number(), "zip": user.get__zip()})
+            else:
+                self.my_list[user.get_first_name()] = {"first_name": user.get_first_name(), "last_name": user.get_last_name(), "city": user.get__city(),
+                  "state": user.get__state(), "phone": user.get__phone_number(), "zip": user.get__zip()}
+        except AttributeError:
+            print("enter name is already exist")
 
     def add_user(self):
         person = Person()
@@ -120,7 +122,7 @@ class AddressBookImplementation(AddressBook):
         print("***contacts***\n")
         for x in data:
             print("first name : "+str(data[x]["first_name"]))
-            print("lasr name : " + str(data[x]["last_name"]))
+            print("last name : " + str(data[x]["last_name"]))
             print("mobile number : " + str(data[x]["phone"]))
             print("city : " + str(data[x]["city"]))
             print("state : " + str(data[x]["state"]))
