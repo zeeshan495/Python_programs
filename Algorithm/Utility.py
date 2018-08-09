@@ -84,16 +84,16 @@ class Utility:
             return True
 
     def primenumber(self,var_range):
-        my_array=[None]*var_range
-        j=0
+        my_array = [None] * var_range
+        index=0
         for x in range(1,var_range+1):
             count=0
             for num in range(1,x+1):
-                if(x%num==0):
+                if(x % num == 0):
                     count=count+1
-            if(count==2):
-                my_array[j]=x
-                j=j+1
+            if(count == 2):
+                my_array[index] = x
+                index = index+1
         return my_array
 
     def extend_annagram(self,prime_array):
@@ -156,8 +156,11 @@ class Utility:
         var_mid=(var_low+var_high)/2
         if(var_mid == var_high):
             return var_mid
-        # print(" if it is "+str(var_mid)+" then enter 'stop'")
-        print(" 1 - "+str(var_mid)+" then enter '1' \n "+str(var_mid + 1)+" - "+str(var_high)+" then enter '2'")
+        if( 1 == var_mid) or ((var_mid + 1) == var_high):
+            print( str(var_mid) + " then enter '1' \n " + str(
+                var_high) + " then enter '2'")
+        else:
+            print(" 1 - "+str(var_mid)+" then enter '1' \n "+str(var_mid + 1)+" - "+str(var_high)+" then enter '2'")
         var_option=self.input_int_data()
         if(var_option == 1):
             return  self.guessing(var_low,var_mid)
@@ -182,13 +185,13 @@ class Utility:
 
     def insertion_sort(self,my_array):
         for index in range(1,len(my_array)):
-            var_key=my_array[index]
-            var_x = index-1
-            while var_x >= 0:
-                if(var_key < my_array[var_x]):
-                    my_array[var_x+1]=my_array[var_x]
-                    my_array[var_x]=var_key
-                    var_x -=  1
+            var_key = my_array[index]
+            prev_index = index-1
+            while prev_index >= 0:
+                if(var_key < my_array[prev_index]):
+                    my_array[prev_index+1] = my_array[prev_index]
+                    my_array[prev_index] = var_key
+                    prev_index -=  1
                 else:
                     break
         return my_array
@@ -266,21 +269,31 @@ class Utility:
         my_array=[2000,1000,500,100,50,10,5,2,1]
         var_note=0
         for x in range(0,len(my_array)):
-            var_number=var_amount/my_array[x]
+            var_number = var_amount/my_array[x]
             padding = format(""," <4s")
             print(" "+str(my_array[x])+""+str(padding)+"x"+str(padding)+""+str(var_number))
-            var_amount=var_amount%my_array[x]
-            var_note=var_note + var_number
-
+            var_amount = var_amount % my_array[x]
+            var_note = var_note + var_number
         return var_note
 
     def day_of_week(self,var_day,var_month,var_year):
-        var_yo = var_year-(14-var_month) / 12
-        var_xo = var_yo + (var_yo / 4) - (var_yo / 100) + (var_yo / 400)
+        var_yo = var_year - (14-var_month) / 12
+        var_x = var_yo + var_yo / 4 - var_yo / 100 + var_yo / 400
         var_mo = var_month + 12 * ((14-var_month)/12) -2
-        var_d = (var_day + var_xo + (31 * var_mo)/12)%7
-
+        var_d = (var_day + var_x + 31 * var_mo/12)%7
         return var_d
+
+    def is_leap_year(self,year):
+        if (year % 4 == 0) :
+            if (year % 100 == 0) :
+                if (year % 400 == 0) :
+                    return True
+                else :
+                    return False
+            else :
+                return True
+        else :
+            return False
 
     def celsius(self):
         print("enter fahrenheit temperature : ")

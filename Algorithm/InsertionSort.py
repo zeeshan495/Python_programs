@@ -11,7 +11,7 @@ class InsertionSort:
         print(" enter values ")
 
         for x in range(0, var_input):
-            my_array[x] = raw_input()
+            my_array[x] = utility.input_int_data()
         sort_array = utility.insertion_sort(my_array)
         print("after insertion sort : ")
         for x in range(0, len(sort_array)):

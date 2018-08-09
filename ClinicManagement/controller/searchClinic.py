@@ -40,10 +40,14 @@ class searchClinic:
             print("enter a choice : ")
             print("1 for search doctor")
             print("2 for search patient")
+            print("3 go back for menu")
             choice = self.utility.input_int_data()
             if choice == 1:
                 self.search_doctor(doctor_list)
             elif choice == 2:
                 self.search_patient(patient_list)
+            elif choice == 3:
+                break
+
             else:
                 print("invalid choice")

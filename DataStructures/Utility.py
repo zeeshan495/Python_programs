@@ -68,7 +68,7 @@ class Utility:
 
     def factorial(self,var_input):
         var_fact = 1
-        for x in range(1, var_input+1):
+        for x in range(1, int(var_input)+1):
             var_fact = var_fact * x
         return var_fact
 

@@ -103,10 +103,19 @@ import random
 #         print "found"
 #     else:
 #         print "not found"
-my_list = {"zeeshan": {"doctor_id": 88, "specialization": "heart", "doctor_name": "zeeshan", "avialability": "both"}, "nikil": {"doctor_id": 99, "specialization": "eye", "doctor_name": "nikil", "avialability": "am"}}
-for x in my_list:
+my_list = [ {"doctor_id": 88, "specialization": "heart", "doctor_name": "zeeshan", "avialability": "both"}, {"doctor_id": 99, "specialization": "eye", "doctor_name": "nikil", "avialability": "am"}]
+# for x in my_list:
+#     print(x["specialization"])
+# new_list = []
+# new_list .append({"doctor_id": 88, "specialization": "heart", "doctor_name": "zeeshan", "avialability": "both"})
+# for x in new_list:
+#     print(x)
+# print(new_list[0])
 
-    if "zxcv" in x:
-        print("true")
-if "zeeshan" in my_list:
-    print("true")
+new_arr = []
+data = my_list
+print(data)
+for x in range(0,len(data)):
+    new_arr.append(data[x])
+    print(data[x])
+print(new_arr)

@@ -12,9 +12,42 @@ class BalancedParanthesis:
     open_para = "("
     close_para = ")"
     for x in range(0 ,len(my_array)):
-        if(my_array[x] == open_para):
+        if(my_array[x] == open_para)  :
             stack.push(my_array[x])
-        elif(my_array[x] == close_para):
+        elif(my_array[x] == close_para)  :
+            result = stack.pop()
+            if(result == 0):
+                print(" Unbalanced paranthesis..... ")
+                exit(0)
+
+    flag = stack.is_empty()
+    if (flag):
+        print("Balanced Paranthesis ")
+        exit(0)
+    else:
+        print("Unbalanced Paranthesis ")
+        exit(0)
+
+    for x in range(0 ,len(my_array)):
+        if (my_array[x] == "{") :
+            stack.push(my_array[x])
+        elif (my_array[x] == "}") :
+            result = stack.pop()
+            if(result == 0):
+                print(" Unbalanced paranthesis..... ")
+                exit(0)
+
+    flag = stack.is_empty()
+    if(flag):
+        print("Balanced Paranthesis ")
+    else:
+        print("Unbalanced Paranthesis ")
+
+
+    for x in range(0 ,len(my_array)):
+        if (my_array[x] == "[") :
+            stack.push(my_array[x])
+        elif (my_array[x] == "]") :
             result = stack.pop()
             if(result == 0):
                 print(" Unbalanced paranthesis..... ")

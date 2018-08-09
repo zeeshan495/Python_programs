@@ -8,7 +8,12 @@ class clinicMain:
     print("\t\t_____________________________________________\n")
     print("\t\t\t***Welcome to our clinic***\n")
     def clinicManagement(self):
-        clinic = ClinicImplementation()
+        doctor_list = {}
+        patient_list = {}
+        clinic1 = ClinicImplementation(doctor_list,patient_list)
+        new_doctor_list = clinic1.read("doctor")
+        new_patient_list = clinic1.read("patient")
+        clinic = ClinicImplementation(new_doctor_list, new_patient_list)
 
         while True:
             print("\t\t\t\tMAIN MENU")
@@ -21,22 +26,16 @@ class clinicMain:
             print("\t\t_____________________________________________")
             choice = self.utility.input_int_data()
             if choice == 1:
-                doctor_list = clinic.read("doctor")
-                clinic.add_doctor(doctor_list)
+                clinic.add_doctor()
 
             elif choice == 2:
-                patient_list = clinic.read("patient")
-                clinic.add_patient(patient_list)
+                clinic.add_patient()
 
             elif choice == 3:
-                doctor_list = clinic.read("doctor")
-                patient_list = clinic.read("patient")
-                clinic.take_appointment(doctor_list,patient_list)
+                clinic.take_appointment()
 
             elif choice == 4:
-                doctor_list = clinic.read("doctor")
-                patient_list = clinic.read("patient")
-                clinic.display(doctor_list,patient_list)
+                clinic.display()
 
             elif choice == 5:
                 print("clinic closed...thank you")

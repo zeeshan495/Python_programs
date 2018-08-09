@@ -12,17 +12,23 @@ import json
 class ClinicImplementation(ClinicManager):
     utility = Utility()
     appointment_list = {}
+    __doctor_list = {}
+    __patient_list = {}
 
-    def add_doctor(self,doctor_list):
-        doctor_list = self.read("doctor")
+    def __init__(self, doctor_list, patient_list):
+        self.__doctor_list = doctor_list
+        self.__patient_list = patient_list
+
+    def add_doctor(self):
+        # self.__doctor_list = self.read("doctor")
         var_doctor_details = self.doctor_details()
-        if var_doctor_details.get_doctor_name() in doctor_list:
-            doctor_list[var_doctor_details.get_doctor_name()].append({"doctor_name": var_doctor_details.get_doctor_name(),"doctor_id":var_doctor_details.get_doctor_id(),"specialization":var_doctor_details.get_specialization(),"avialability":var_doctor_details.get_avialability()})
+        if var_doctor_details.get_doctor_name() in self.__doctor_list:
+            self.__doctor_list[var_doctor_details.get_doctor_name()].append({"doctor_name": var_doctor_details.get_doctor_name(),"doctor_id":var_doctor_details.get_doctor_id(),"specialization":var_doctor_details.get_specialization(),"avialability":var_doctor_details.get_avialability()})
         else:
-            doctor_list[var_doctor_details.get_doctor_name()] = {"doctor_name": var_doctor_details.get_doctor_name(), "doctor_id": var_doctor_details.get_doctor_id(),
+            self.__doctor_list[var_doctor_details.get_doctor_name()] = {"doctor_name": var_doctor_details.get_doctor_name(), "doctor_id": var_doctor_details.get_doctor_id(),
                  "specialization": var_doctor_details.get_specialization(),
                  "avialability": var_doctor_details.get_avialability()}
-        self.save("doctor",doctor_list)
+        self.save("doctor",self.__doctor_list)
 
     def doctor_details(self):
         doctor = Doctor()
@@ -52,16 +58,16 @@ class ClinicImplementation(ClinicManager):
         doctor.set_avialability(data)
         return doctor
 
-    def add_patient(self,patient_list):
-        patient_list = self.read("patient")
+    def add_patient(self):
+        # self.__patient_list = self.read("patient")
         var_patient_details = self.patient_details()
-        if var_patient_details.get_patient_name() in patient_list:
-            patient_list[var_patient_details.get_patient_name()].append({"patient_name":var_patient_details.get_patient_name(), "patient_id":var_patient_details.get_patient_id(), "number":var_patient_details.get_number(), "age":get_age()})
+        if var_patient_details.get_patient_name() in self.__patient_list:
+            self.__patient_list[var_patient_details.get_patient_name()].append({"patient_name":var_patient_details.get_patient_name(), "patient_id":var_patient_details.get_patient_id(), "number":var_patient_details.get_number(), "age":get_age()})
         else:
-            patient_list[var_patient_details.get_patient_name()] = {"patient_name": var_patient_details.get_patient_name(),
+            self.__patient_list[var_patient_details.get_patient_name()] = {"patient_name": var_patient_details.get_patient_name(),
                  "patient_id": var_patient_details.get_patient_id(), "number": var_patient_details.get_number(),
                  "age": var_patient_details.get_age()}
-        self.save("patient",patient_list)
+        self.save("patient",self.__patient_list)
 
     def patient_details(self):
         patient = Patient()
@@ -93,11 +99,11 @@ class ClinicImplementation(ClinicManager):
         appointment.set_date(str(date)[:10])
         return appointment
 
-    def take_appointment(self,doctor_list,patient_list):
+    def take_appointment(self):
         while True:
             print("please enter a doctor name : ")
             doctor_detail = self.utility.input_str_data()
-            availibility_list = self.search_doctor(doctor_detail,doctor_list)
+            availibility_list = self.search_doctor(doctor_detail,self.__doctor_list)
             if availibility_list == {}:
                 print("you searched doctor was unavailable : ")
             else:
@@ -112,7 +118,7 @@ class ClinicImplementation(ClinicManager):
                 else:
                     print("please enter any patient detail : ")
                     patient_detail = self.utility.input_str_data()
-                    particular_patient = self.search_patient(patient_detail,patient_list)
+                    particular_patient = self.search_patient(patient_detail,self.__patient_list)
 
                     if particular_patient == {}:
                         print("you searched patient was unavailable : ")
@@ -155,10 +161,9 @@ class ClinicImplementation(ClinicManager):
                     my_list[x].append(data[x])
                 else:
                     my_list[x] = data[x]
-
         return my_list
 
-    def display(self, doctor_list, patient_list):
+    def display(self):
         appointment_list = self.read("appointment")
         display_clinic_obj = displayClinic()
         search_clinic_obj = searchClinic()
@@ -173,17 +178,17 @@ class ClinicImplementation(ClinicManager):
             print("7 for main menu")
             choice = self.utility.input_int_data()
             if choice == 1:
-                display_clinic_obj.display_doctor(doctor_list)
+                display_clinic_obj.display_doctor(self.__doctor_list)
             elif choice == 2:
-                display_clinic_obj.display_patient(patient_list)
+                display_clinic_obj.display_patient(self.__patient_list)
             elif choice == 3:
                 display_clinic_obj.display_appointments(appointment_list)
             elif choice == 4:
-                display_clinic_obj.popular_doctor(doctor_list,appointment_list)
+                display_clinic_obj.popular_doctor(self.__doctor_list,appointment_list)
             elif choice == 5:
-                display_clinic_obj.popular_specialization(doctor_list,appointment_list)
+                display_clinic_obj.popular_specialization(self.__doctor_list,appointment_list)
             elif choice == 6:
-                search_clinic_obj.search(doctor_list,patient_list)
+                search_clinic_obj.search(self.__doctor_list,self.__patient_list)
             elif choice == 7:
                 break
             else:

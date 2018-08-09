@@ -2,6 +2,10 @@
 from Utility import *
 class BinaryTree:
     utility = Utility()
+    var_res = utility.factorial(40)
+    print(type(var_res))
+    print(var_res)
+
     print("enter no of test cases : ")
     test_cases = utility.input_int_data()
     print("enter a number : ")
