@@ -28,6 +28,29 @@ class Stack:
             self.size = self.size - 1
         return temp.data
 
+    def remove_at(self,data):
+        temp = self.head
+        prev = None
+
+        if temp is None:
+            print(" it is empty ")
+        elif (temp.data["company_name"] == data["company_name"]):
+            print("updated")
+            temp = self.head
+            self.head = temp.next_node
+            temp = None
+        else:
+            temp2 = self.head
+            while(temp2 != None):
+                if temp2.data["company_name"] == data["company_name"] :
+                    print("updated")
+                    prev.next_node = temp2.next_node
+                    temp2 = None
+                    break
+                else:
+                    prev = temp2
+                    temp2 = temp2.next_node
+
     def search(self,key):
         temp = self.head
         var_x = 0

@@ -4,7 +4,8 @@ class TwoDArray:
     while True:
         while True:
             try:
-                choice=int(input("please enter a choice :\n 1 for int\n 2 for boolean\n 3 for float"))
+                print("please enter a choice :\n 1 for int\n 2 for boolean\n 3 for float")
+                choice = utility.input_int_data()
                 if(choice==1):
                     utility.twod_int_array()
                 elif(choice==2):

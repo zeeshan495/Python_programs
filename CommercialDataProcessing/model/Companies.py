@@ -6,7 +6,6 @@ class Companies:
     __company_symbol = None
     __share_price = None
     __total_shares = None
-    __time = None
 
     def set_company_name(self,__company_name):
         self.__company_name = __company_name
@@ -20,8 +19,7 @@ class Companies:
     def set_total_shares(self,total_shares):
         self.__total_shares = total_shares
 
-    def set_time(self,time):
-        self.__time = time
+
 
     def get_company_name(self):
         return self.__company_name
@@ -35,5 +33,3 @@ class Companies:
     def get_total_shares(self):
         return self.__total_shares
 
-    def get_time(self):
-        return self.__time

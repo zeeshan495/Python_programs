@@ -3,12 +3,12 @@ class HarmonicNumber:
     while True:
         try:
             utility=Utility()
-            input_number = int(input("Please enter a given input number : "))
+            print("Please enter a given input number : ")
+            input_number = utility.input_int_data()
             if (input_number > 0):
                 utility.harmonic_func(input_number)
             else:
                 print("please check the entered number")
-            break
         except NameError :
             print("please enter integer")
         except OverflowError :

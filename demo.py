@@ -3,6 +3,7 @@ import math
 from DataStructures.LinkedList import *
 from DataStructures.Node import *
 import random
+from datetime import *
 #
 # var_list=[]
 # var_list.append(200)
@@ -112,10 +113,8 @@ my_list = [ {"doctor_id": 88, "specialization": "heart", "doctor_name": "zeeshan
 #     print(x)
 # print(new_list[0])
 
-new_arr = []
-data = my_list
-print(data)
-for x in range(0,len(data)):
-    new_arr.append(data[x])
-    print(data[x])
+new_arr = {}
+new_arr = "hello"
 print(new_arr)
+arr = [None]*10
+print(len(arr))

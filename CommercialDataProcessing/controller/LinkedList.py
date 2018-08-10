@@ -35,6 +35,7 @@ class LinkedList:
                 else:
                     prev = temp2
                     temp2 = temp2.next_node
+                    prev = None
 
 
     def search(self,data):

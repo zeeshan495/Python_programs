@@ -2,9 +2,14 @@ from Utility import *
 class FlipCoin:
     while True:
         try:
-            obj=Utility()
-            number_of_times = int(raw_input("Please the number of times to Flip Coin "))
-            obj.flip(number_of_times)
-            break
+            utility = Utility()
+            print("Please the number of times to Flip Coin ")
+            number_of_times = utility.input_int_data()
+            if (number_of_times >= 0):
+                utility.flip(number_of_times)
+            else:
+                print("please enter positive number")
         except ValueError :
             print("invalid input")
+        except OverflowError:
+            print("OverflowError")

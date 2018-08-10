@@ -31,13 +31,7 @@ class StockMain:
             elif choice == 2:
                 stock_obj1.add_company()
             elif choice == 3:
-                print("1 for buy")
-                print("2 for sell")
-                choice = self.utility.input_int_data()
-                if choice == 1:
-                    stock_obj1.buy_share()
-                elif choice == 2:
-                    pass
+                stock_obj1.buy_sell_share()
             elif choice == 4:
                 stock_obj1.display_companies()
             elif choice == 5:

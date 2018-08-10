@@ -3,7 +3,7 @@
 from Utility import *
 class Permutations:
     utility=Utility()
-
-    var_str = raw_input("please enter the String : ")
+    print("please enter the String : ")
+    var_str = utility.input_str_data()
     var_len=len(var_str)
-    utility.permute(var_str, 0, var_len)
+    utility.permute(var_str, 0, var_len-1)

@@ -19,10 +19,35 @@ class Utility():
                 break
             except NameError:
                 print("please enter a integer...try again")
-            except OverflowError:
-                print("given number is very high...try again")
+            except NameError:
+                print("please enter integer value")
             except SyntaxError:
-                print("check the given input and try again")
+                print("Check the entered input and try again")
+            except MemoryError:
+                print("Check the entered input and try again")
+            except OverflowError:
+                print("Entered number is very high")
+            except Exception:
+                print("exception...something went wrong")
+
+    def input_str_data(self):
+        while True:
+            try:
+                var_input = raw_input()
+                return var_input
+                break
+            except NameError:
+                print("please enter a string...try again")
+            except NameError:
+                print("please enter integer value")
+            except SyntaxError:
+                print("Check the entered input and try again")
+            except MemoryError:
+                print("Check the entered input and try again")
+            except OverflowError:
+                print("Entered number is very high")
+            except Exception:
+                print("exception...something went wrong")
 
 
 
@@ -37,14 +62,15 @@ class Utility():
     def flip(self, number_of_times):
         heads = 0
         tails = 0
-        if (number_of_times >= 0):
-            for flip in range(1, number_of_times+1):
-                if (random.random() < 0.5):
-                    tails = tails + 1
-                else:
-                    heads = heads + 1
-        else:
-            print("please enter positive number")
+
+        for flip in range(1, number_of_times+1):
+            if (random.random() < 0.5):
+                tails = tails + 1
+                print(str(flip)+" tails")
+            else:
+                heads = heads + 1
+                print(str(flip) + " heads")
+
         try:
             print("percentage of head " + str(float((100.0 * heads) / number_of_times)))
             print("percentage of tail " + str(float((100.0 * tails) / number_of_times)))
@@ -76,31 +102,18 @@ class Utility():
         print("the harmonic value : "+str(harmonic_value))
 
     def factorization(self,given_input):
-        loop=given_input/2
-        for x in range(1,loop+1):
-            value=x*x
-            if(given_input == value):
-                return x
-        return -1
+        while given_input % 2 == 0:
+            print 2,
+            given_input = given_input / 2
 
-    def game(self,stake,goal,number_of_times):
-        loss=0
-        wins=0
-        for x in range(0,number_of_times):
-            amount=stake
-            while(amount>0) and (amount<goal):
-                if(random.random()>0.5):
-                    amount=amount+1
-                else:
-                    amount=amount-1
-            if(amount==goal):
-                wins=wins+1
-            else:
-                loss=loss+1
-        print(" stake : "+str(amount))
-        print("total number of wins "+str(wins))
-        print("percentage of win "+str((100.0 * wins) / number_of_times))
-        print("percentage of loss "+str((100.0 * loss) / number_of_times))
+        for i in range(3, int(math.sqrt(given_input)) + 1):
+            while given_input % i == 0:
+                print i,
+                given_input = given_input / i
+        if given_input > 2:
+            print given_input
+
+
 
     def random_number(self,given_input):
         # var_count = 0
@@ -119,7 +132,7 @@ class Utility():
         # for x in range(0,given_input):
         x=0
         while(x < given_input):
-            temp=random.randint(0,given_input)
+            temp=random.randint(0,5000)
             count=count+1
             my_array[x]=temp+1
             for y in range(0,x):
@@ -215,21 +228,19 @@ class Utility():
 
 
     def permute(self,var_str, var_left, var_right):
-        if(var_left==var_right):
+        if(var_left == var_right):
                 print(var_str)
         else:
             for x in range(var_left,var_right+1):
                 var_str=self.swap(var_str, var_left, x)
                 self.permute(var_str, var_left+1, var_right)
 
-
     def swap(self,var_str,var_left,var_right):
-        temp=0
-        my_list=list(var_str)
-        temp=my_list[var_left]
-        my_list[var_left]=my_list[var_right]
-        my_list[var_right]=temp
-        var_out=''.join(my_list)
+        my_list = list(var_str)
+        temp = my_list[var_left]
+        my_list[var_left] = my_list[var_right]
+        my_list[var_right] = temp
+        var_out = ''.join(my_list)
         return var_out
 
     def start(self):
@@ -264,7 +275,6 @@ class Utility():
             print("roots are not found for those values")
 
     def weather(self,var_t,var_v):
-        var_w=0
         if((var_t<=50) and (var_v<=120) and (var_v >=3)):
             var_w = 35.74 + (0.6215 * var_t) + ((0.4275 * var_t) - 35.75) * math.pow(var_v, 0.16)
             print(var_w)

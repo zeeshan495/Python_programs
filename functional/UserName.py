@@ -3,9 +3,10 @@
 from Utility import *
 class UserName:
 
-    obj=Utility()
-    input_string=raw_input("please enter a name")
+    utility = Utility()
+    print("please enter a name")
+    input_string = utility.input_str_data()
     main_string="Hello <<UserName>>, How are you?"
-    output_string=obj.replacing(input_string,main_string)
+    output_string = utility.replacing(input_string,main_string)
     print(output_string)
 

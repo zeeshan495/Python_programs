@@ -96,7 +96,7 @@ class ClinicImplementation(ClinicManager):
         appointment.set_doctor(particular_doctor)
         appointment.set_patient(particular_patient)
         date = datetime.now()
-        appointment.set_date(str(date)[:10])
+        appointment.set_date(str(date)[:20])
         return appointment
 
     def take_appointment(self):

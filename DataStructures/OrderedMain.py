@@ -9,9 +9,11 @@ def main():
         utility = Utility()
         file_name = "Ordered.txt"
         file = open(file_name, "r")
+
         if file.mode == 'r':
             contents = file.read()
         print(contents)
+
         temp_array = contents.split(" ")
         my_array = []
 
@@ -32,6 +34,7 @@ def main():
             list.delete(new_word)
         list.display()
         node = list.head
+        print(node)
         utility.print_list(file_name, node)
 
         file.close()
