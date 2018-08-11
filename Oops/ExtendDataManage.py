@@ -2,70 +2,65 @@ import json
 from Utility import *
 from Product import *
 
-
 class ExtendDataManage():
-    global utility
+
     utility = Utility()
+    my_list = {}
+    __file_name = None
 
-my_list = {}
-def main():
-    while True:
-        print("\tenter a choice : ")
-        print("1 for rice\n2 for pulses\n3 for wheat\n4 for stop\n")
-        choice = utility.input_int_data()
-        if (choice == 1):
-            name = "rice"
+    def __init__(self,file_name):
+        self.__file_name = file_name
 
-        elif (choice == 2):
-            name = "pulses"
+    def main_func(self):
+        choice_list = ["rice", "pulses", "wheat"]
+        while True:
+            print("\tenter a choice : ")
+            print("1 for rice\n2 for pulses\n3 for wheat\n4 for stop\n")
+            choice = self.utility.input_int_data()
+            if choice < 4 and choice > 0:
+                name = choice_list[choice-1]
+            elif (choice == 4):
+                print("Sucessfully saved")
+                self.calculation()
+                exit(0)
+            else :
+                print("invalid choice")
+                break
+            product_info = self.add(name)
 
-        elif (choice == 3):
-            name = "wheat"
+            if product_info.get_name() in self.my_list:
+                self.my_list[product_info.get_name()].append({"price": product_info.get_price(), "type": product_info.get_type(), "weight": product_info.get_weight()})
+            else:
+                self.my_list[product_info.get_name()] = [{"price": product_info.get_price(), "type": product_info.get_type(), "weight": product_info.get_weight()}]
 
-        elif (choice == 4):
-            print("Sucessfully saved")
-            calculation()
-            exit(0)
-        else:
-            print("invalid choice")
-            break
-        info = add(name)
+            self.save()
 
-        if info.get_name() in my_list:
-            my_list[info.get_name()].append({"price": info.get_price(), "type": info.get_type(), "weight": info.get_weight()})
-        else:
-            my_list[info.get_name()] = [{"price": info.get_price(), "type": info.get_type(), "weight": info.get_weight()}]
+    def add(self, name):
+        product_info = Product()
+        product_info.set_name(name)
+        print("enter the type of " + str(name))
+        product_info.set_type(self.utility.input_str_data())
+        print("enter the price of " + str(name))
+        product_info.set_price(self.utility.input_int_data())
+        print("enter the weight of " + str(name))
+        product_info.set_weight(self.utility.input_int_data())
 
-        save()
+        return product_info
 
-def add(name):
-    print("enter the type of " + str(name))
-    type = utility.input_str_data()
-    print("enter the price of " + str(name))
-    price = utility.input_int_data()
-    print("enter the weight of " + str(name))
-    weight = utility.input_int_data()
-    obj = Product(name, type, price, weight)
-    return obj
+    def save(self):
+        data = json.dumps(self.my_list)
+        with open("/home/bridgeit/Zeeshan_Python/JsonFiles/"+str(self.__file_name)+".json", 'w') as f:
+            f.write(data)
 
+    def calculation(self):
+        for x in self.my_list:
+            for y in range(0,len(self.my_list[x])):
+                print("type : "+str(self.my_list[x][y]["type"])+"\n"),
+                print("price : " + str(self.my_list[x][y]["price"]) + "\n"),
+                print("weight : " + str(self.my_list[x][y]["weight"]) + "\n"),
+                print("Total Price of "+str(self.my_list[x][y]["type"])+" : " + str(self.my_list[x][y]["price"] * self.my_list[x][y]["weight"]) + "\n"),
+                print("\n")
 
-def save():
-    data = json.dumps(my_list)
-    with open("/home/bridgeit/Zeeshan_Python/JsonFiles/extendDataManage.json", 'w') as f:
-        f.write(data)
-
-def calculation():
-    for x in my_list:
-
-        for y in range(0,len(my_list[x])):
-            # print(my_list[x][0])
-            # print("type : " + str(my_list[x][0]["type"]) + "\n")
-
-            print("type : "+str(my_list[x][y]["type"])+"\n"),
-            print("price : " + str(my_list[x][y]["price"]) + "\n"),
-            print("weight : " + str(my_list[x][y]["weight"]) + "\n"),
-            print("Total Price of "+str(my_list[x][y]["type"])+" : " + str(my_list[x][y]["price"]*my_list[x][y]["weight"]) + "\n"),
-            print("\n")
-
-main()
-
+class DataManageMain:
+    obj = ExtendDataManage("extendDataManage")
+    obj.main_func()

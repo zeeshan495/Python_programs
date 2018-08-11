@@ -112,9 +112,19 @@ my_list = [ {"doctor_id": 88, "specialization": "heart", "doctor_name": "zeeshan
 # for x in new_list:
 #     print(x)
 # print(new_list[0])
+#
+# new_arr = {}
+# new_arr = "hello"
+# print(new_arr)
+# arr = [None]*10
+# print(len(arr))
+# a = [1,2,2,2,3,9,6]
+# print(a.count(2))
 
-new_arr = {}
-new_arr = "hello"
-print(new_arr)
-arr = [None]*10
-print(len(arr))
+a = set([1,2,2,3,9,6])
+a.add(7)
+
+print(a)
+a.add(7)
+
+print(a)

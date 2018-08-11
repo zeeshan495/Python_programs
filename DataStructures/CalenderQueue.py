@@ -42,8 +42,14 @@ class CalenderQueue:
 
             if ((x + var_day) % 7 == 0) or (x == days_array[var_month]):
                 que.add_rear("\n")
-        que.display()
+        que.display_que()
 
-        for x in range(1, days_array[var_month] + 1):
-            que2.remove_front()
-            que2.remove_rear()
+        # for x in range(1, days_array[var_month] + 1):
+        #     element1 = que2.pop_front()
+        #     element2 = que2.pop_rear()
+        #     if element1 == False:
+        #         print("elem1 "+str(element2))
+        #     elif element2 == False:
+        #         print("elem2 "+str(element1-1))
+        #     print(que2.pop_front())
+        #     print(que2.pop_rear())

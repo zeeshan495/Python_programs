@@ -1,1 +1,20 @@
-[{"share_price": 80, "total_shares": 1988, "company_symbol": "&", "company_name": "infosys"}, {"share_price": 50, "total_shares": 2500, "company_symbol": "^", "company_name": "Cap Gemini"}, {"share_price": 60, "total_shares": 1500, "company_symbol": "@", "company_name": "TCS"}]
+[
+  {
+    "share_price": 80,
+    "total_shares": 1988,
+    "company_symbol": "&",
+    "company_name": "infosys"
+  },
+  {
+    "share_price": 50,
+    "total_shares": 2500,
+    "company_symbol": "^",
+    "company_name": "Cap Gemini"
+  },
+  {
+    "share_price": 60,
+    "total_shares": 1500,
+    "company_symbol": "@",
+    "company_name": "TCS"
+  }
+]

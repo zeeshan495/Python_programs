@@ -15,7 +15,8 @@ language["python2"] = {
 import json
 # from JsonFiles import *
 class Demo:
-    # data = json.load(open("DataManagment.json","r"))
+
+
     # data["Inventory1"]["price"] = 30
     # print(data)
 

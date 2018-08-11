@@ -1,11 +1,11 @@
 
 
 class Product:
-    def __init__(self,name,type,price,weight):
-        self.set_name(name)
-        self.set_type(type)
-        self.set_price(price)
-        self.set_weight(weight)
+    # def __init__(self,name,type,price,weight):
+    #     self.set_name(name)
+    #     self.set_type(type)
+    #     self.set_price(price)
+    #     self.set_weight(weight)
 
     def set_name(self,name):
         self.__name = name

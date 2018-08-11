@@ -46,7 +46,8 @@ class Deque:
     def pop_rear(self):
         temp = self.head
         if (temp == None):
-            print("it is empty ")
+            print("it is empty rear")
+            return False
         elif (temp.next_node == None):
             result = temp
             self.head = None
@@ -60,7 +61,8 @@ class Deque:
     def pop_front(self):
         temp = self.head
         if(temp == None):
-            print("it is empty ")
+            print("it is empty front")
+            return False
         else:
             result = self.head
             self.head = temp.next_node

@@ -27,3 +27,9 @@ class QueueLinkedList:
         while(temp != None):
             print temp.data
             temp = temp.next_node
+
+    def display_que(self):
+        temp = self.head
+        while(temp != None):
+            print temp.data,
+            temp = temp.next_node

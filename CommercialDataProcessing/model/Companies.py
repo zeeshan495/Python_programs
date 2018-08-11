@@ -20,7 +20,6 @@ class Companies:
         self.__total_shares = total_shares
 
 
-
     def get_company_name(self):
         return self.__company_name
 

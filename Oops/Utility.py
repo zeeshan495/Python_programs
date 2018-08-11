@@ -13,8 +13,7 @@ class Utility:
                 break
             except NameError:
                 print("please enter a integer...try again")
-            except NameError:
-                print("please enter integer value")
+
             except SyntaxError:
                 print("Check the entered input and try again")
             except MemoryError:
@@ -88,7 +87,6 @@ class Utility:
             return False
 
         date = datetime.now()
-
         main_str = main_str.replace("01/01/2016", str(date)[:10])
         print(main_str)
 
@@ -121,31 +119,19 @@ class Utility:
                 column = column + 1
         return my_list
 
-    def deck_of_cards(self):
-        suit_list = ["Clubs", "Diamonds", "Hearts", "Spades"]
-        rank_list = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
-        deck_arr = [None] * 52
-        #   storing total cards
-        for i in range(0, len(rank_list)):
-            for j in range(0, len(suit_list)):
-                deck_arr[len(suit_list) * i + j] = str(rank_list[i])+ " of "+ str(suit_list[j])
 
-        #   shuffling the cards
-        for i in range(0, len(deck_arr)):
-            rand = i + int(random.random() * (len(deck_arr) - i))
-            temp = deck_arr[rand]
-            deck_arr[rand] = deck_arr[i]
-            deck_arr[i] = temp
-        return deck_arr
 
-    def sort_cards(self,deck_arr, min, max):
+
+    def sort_cards2(self,deck_arr, column):
         char_arr = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '1', 'J', 'Q', 'K']
         index = 0
         sort_arr = [None] * 9
-        for x in range(13):
-            for y in range(min, max):
-                temp = deck_arr[y]
-                if (char_arr[x] == temp[0]):
-                    sort_arr[index] = deck_arr[y]
+
+        for x in range(len(char_arr)):
+            for y in range(9):
+                temp = deck_arr[column][y][0]
+
+                if (char_arr[x] == temp):
+                    sort_arr[index] = deck_arr[column][y]
                     index = index + 1
         return sort_arr

@@ -1,13 +1,41 @@
 
 
 from Utility import *
+from RegexInfo import *
 class RegexReplace:
-    utility = Utility()
-    main_str = "Hello <<name>>, We have your full name as <<full name>> in our system. your contact number is 91-xxxxxxxxxx. Please,let us know in case of any clarification Thank you BridgeLabz 01/01/2016."
-    flag = utility.regex_replace(main_str)
-    if(flag != None):
-        print("")
 
+    __main_str = None
+    __info_obj = RegexInfo()
+
+    def __init__(self, main_str):
+        self.__main_str = main_str
+
+    def regex_replace(self, info_obj):
+        self.__info_obj = info_obj
+
+        if re.search("[\wA-Za-z]{2,20}", self.__info_obj.get__sur_name()):
+            self.__main_str = self.__main_str.replace("<<name>>",self.__info_obj.get__sur_name())
+        else:
+            print("invalid input......try again : ")
+            return False
+
+        if re.search("[\wA-Za-z]{2,20}\s\w[A-Za-z]{2,20}", self.__info_obj.get__full_name()):
+            self.__main_str = self.__main_str.replace("<<full name>>", self.__info_obj.get__full_name())
+        else:
+            print("invalid input......try again : ")
+            return False
+
+        if re.search("\w{10}", self.__info_obj.get__mobile_num()):
+            self.__main_str = self.__main_str.replace("xxxxxxxxxx", self.__info_obj.get__mobile_num())
+        else:
+            print("invalid input......try again : ")
+            return False
+
+        self.__main_str = self.__main_str.replace("01/01/2016", self.__info_obj.get__date())
+        return True
+
+    def display(self):
+        print(self.__main_str)
 
 
 

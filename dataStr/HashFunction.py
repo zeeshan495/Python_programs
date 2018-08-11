@@ -1,8 +1,9 @@
 
-from Node import *
+from DataStructures.Node import *
 class HashFunction:
     table = None
     size = None
+    node = Node
 
     def __init__(self):
         self.head = None
@@ -49,7 +50,9 @@ class HashFunction:
                     temp2 = temp2.next_node
 
     def search(self,data):
-        temp = self.head
+        position = self.table_position(data)
+        self.node = self.table[position]
+        temp = self.node
         while(temp != None):
             if (temp.data == data):
                 return True
@@ -69,10 +72,9 @@ class HashFunction:
         file = open(f,"w+")
         if(head is None):
             print("it is empty")
-        # elif (head.next_node is None):
-        #     file.write(head.data),
-        #     file.write(" ")
         else:
-            while(head != None):
-                file.write(str(head.data)+" ")
-                head = head.next_node
+            for x in range(len(head)):
+                self.node = head[x]
+                while(self.node != None):
+                    file.write(str(self.node.data)+" ")
+                    self.node = self.node.next_node

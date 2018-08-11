@@ -1,10 +1,12 @@
 
 from HashFunction import *
-from Utility import *
+from DataStructures.Utility import *
+from DataStructures.Node import *
+from dataStr import *
 class HashMain:
     list = HashFunction()
     utility = Utility()
-    file = open("HashingFile.txt", "r")
+    file = open("/home/bridgeit/Zeeshan_Python/dataStr/HashingFile.txt", "r")
 
     if file.mode == 'r':
         contents = file.read()
@@ -19,7 +21,7 @@ class HashMain:
             my_array.append(temp_array[x])
 
     for x in range(0, len(my_array)):
-        list.add(my_array[x])
+        list.insert(int(my_array[x]))
 
     list.display()
 
@@ -27,6 +29,7 @@ class HashMain:
     new_word = utility.input_int_data()
 
     status = list.search(new_word)
+    print(status)
     if status == False:
         list.insert(new_word)
     else:
@@ -35,7 +38,7 @@ class HashMain:
     list.display()
 
     node = list.table
-    print(node)
+    data = node[5]
     list.print_list("HashingFile.txt", node)
 
     file.close()
