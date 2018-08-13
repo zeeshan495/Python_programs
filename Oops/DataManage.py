@@ -37,6 +37,6 @@ class DataManageImpl:
     obj.read()
     obj.display()
 
-    obj = DataManage("abc")
-    obj.read()
-    obj.display()
+    # obj = DataManage("abc")
+    # obj.read()
+    # obj.display()

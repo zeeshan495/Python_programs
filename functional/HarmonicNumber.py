@@ -7,6 +7,7 @@ class HarmonicNumber:
             input_number = utility.input_int_data()
             if (input_number > 0):
                 utility.harmonic_func(input_number)
+                break
             else:
                 print("please check the entered number")
         except NameError :

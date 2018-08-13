@@ -156,14 +156,14 @@ class AddressBookImplementation(AddressBook):
         f = open("/home/bridgeit/Zeeshan_Python/AddressJson/" + addressbook_name + ".json", "r")
         data = json.load(f)
         for x in data:
-            temp.append(data[x]["zip"])
+            var_zip =   str(data[x]["zip"])[0]
+            temp.append(var_zip)
         sort_list = sorted(temp)
-
         print("***contacts***\n")
         print("sorted by first name")
         for y in range(0,len(sort_list)):
             for x in data:
-                if(sort_list[y] == data[x]["zip"]):
+                if(sort_list[y] == str(data[x]["zip"])[0]):
                     print("first name : " + str(data[x]["first_name"]))
                     print("lasr name : " + str(data[x]["last_name"]))
                     print("mobile number : " + str(data[x]["phone"]))

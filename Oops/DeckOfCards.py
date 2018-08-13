@@ -20,6 +20,7 @@ class DeckOfCards:
             deck_arr[i] = temp
         return deck_arr
 
+        #   sorting for each person
     def sort_cards(self,deck_arr):
         char_arr = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '1', 'J', 'Q', 'K']
         index = 0

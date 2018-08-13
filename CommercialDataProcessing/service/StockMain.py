@@ -16,7 +16,7 @@ class StockMain:
 
         while True:
             print("\t_____________________________________________\n")
-            print("\t\t\tSTOCK ACCOUNT");
+            print("\t\t\tSTOCK ACCOUNT")
             print("\t_____________________________________________\n")
             print("\t1.	add customer")
             print("\t2.	add company")
@@ -43,5 +43,6 @@ class StockMain:
                 break
             else:
                 print("invalid choice")
+
 stock = StockMain()
 stock.stock_account()

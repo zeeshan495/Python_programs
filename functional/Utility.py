@@ -102,6 +102,7 @@ class Utility():
         print("the harmonic value : "+str(harmonic_value))
 
     def factorization(self,given_input):
+        temp = given_input
         while given_input % 2 == 0:
             print 2,
             given_input = given_input / 2
@@ -110,7 +111,9 @@ class Utility():
             while given_input % i == 0:
                 print i,
                 given_input = given_input / i
-        if given_input > 2:
+        if temp == given_input:
+            print("it is a prime number")
+        elif given_input > 2:
             print given_input
 
 
@@ -210,7 +213,8 @@ class Utility():
         for x in range(0,len(my_array)):
             while True:
                 try:
-                    my_array[x] = int(input(" enter the value : "))
+                    print("enter a value : ")
+                    my_array[x] = self.input_int_data()
                     break
                 except NameError:
                     print("enter integer value only...try again")
@@ -275,9 +279,9 @@ class Utility():
             print("roots are not found for those values")
 
     def weather(self,var_t,var_v):
-        if((var_t<=50) and (var_v<=120) and (var_v >=3)):
+        # if((var_t<=50) and (var_v<=120) and (var_v >=3)):
             var_w = 35.74 + (0.6215 * var_t) + ((0.4275 * var_t) - 35.75) * math.pow(var_v, 0.16)
             print(var_w)
-        else:
-            print("please enter valid input")
+        # else:
+        #     print("please enter valid input")
 

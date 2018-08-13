@@ -5,10 +5,20 @@ class Stopwatch:
     print("***STOPWATCH***")
     while True:
         try:
-            input("enter any number to start ")
-            utility.start()
-            input("enter any number to stop ")
-            break
+            # input("enter any number to start ")
+            print("enter 1 to start")
+            choice = utility.input_int_data()
+            if choice == 1:
+                utility.start()
+                # input("enter any number to stop ")
+                print("enter 2 to stop")
+                choice2 = utility.input_int_data()
+                if choice2 == 2:
+                    break
+                else:
+                    print("invalid input")
+            else:
+                print("invalid input")
         except NameError :
             print("please enter only integers ")
     utility.stop()

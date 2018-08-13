@@ -11,7 +11,9 @@ class Gambler:
     else:
         loss = 0
         wins = 0
-        for x in range(1, number_of_times + 1):
+        x = 1
+        # for x in range(1, number_of_times + 1):
+        while x <= number_of_times :
             print("Please enter a stake : ")
             stake = utility.input_int_data()
             print("Please enter a goal : ")
@@ -30,11 +32,12 @@ class Gambler:
                         amount = amount - 1
                 if (amount == goal):
                     wins = wins + 1
-                    print(str(x) + " game win..amount : "+str(amount))
+                    print("win")
                 else:
                     loss = loss + 1
-                    print(str(x) + " game loss..amount :  "+str(amount))
+                    print("loss")
+                x +=1
 
-    print("total number of wins " + str(wins))
-    print("percentage of win " + str((100.0 * wins) / number_of_times))
-    print("percentage of loss " + str((100.0 * loss) / number_of_times))
+        print("total number of wins " + str(wins))
+        print("percentage of win " + str((100.0 * wins) / number_of_times))
+        print("percentage of loss " + str((100.0 * loss) / number_of_times))

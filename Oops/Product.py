@@ -7,6 +7,11 @@ class Product:
     #     self.set_price(price)
     #     self.set_weight(weight)
 
+    __name = None
+    __type = None
+    __price = None
+    __weight = None
+
     def set_name(self,name):
         self.__name = name
 

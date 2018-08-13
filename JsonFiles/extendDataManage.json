@@ -1,1 +1,1 @@
-{"wheat": [{"price": 79, "type": "brown", "weight": 3}], "rice": [{"price": 50, "type": "basmati", "weight": 5}], "pulses": [{"price": 40, "type": "small", "weight": 4}, {"price": 60, "type": "large", "weight": 4}]}
+{"wheat": [{"price": 676, "type": "brown", "weight": 3}], "rice": [{"price": 45, "type": "basmati", "weight": 65}, {"price": 56, "type": "normal", "weight": 9}], "pulses": [{"price": 6, "type": "small", "weight": 4}, {"price": 45, "type": "large", "weight": 7}]}

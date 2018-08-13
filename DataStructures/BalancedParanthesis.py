@@ -20,12 +20,13 @@ class BalancedParanthesis:
                 print(" Unbalanced paranthesis..... ")
                 exit(0)
 
-    flag = stack.is_empty()
-    if (flag):
-        print("Balanced Paranthesis ")
-        exit(0)
+    flag1 = stack.is_empty()
+    if (flag1):
+        pass
+        # print("Balanced Paranthesis '()'")
+        # exit(0)
     else:
-        print("Unbalanced Paranthesis ")
+        print("Unbalanced Paranthesis '()'")
         exit(0)
 
     for x in range(0 ,len(my_array)):
@@ -37,11 +38,12 @@ class BalancedParanthesis:
                 print(" Unbalanced paranthesis..... ")
                 exit(0)
 
-    flag = stack.is_empty()
-    if(flag):
-        print("Balanced Paranthesis ")
+    flag2 = stack.is_empty()
+    if(flag2):
+        pass
+        # print("Balanced Paranthesis '{}'")
     else:
-        print("Unbalanced Paranthesis ")
+        print("Unbalanced Paranthesis '{}'")
 
 
     for x in range(0 ,len(my_array)):
@@ -53,8 +55,8 @@ class BalancedParanthesis:
                 print(" Unbalanced paranthesis..... ")
                 exit(0)
 
-    flag = stack.is_empty()
-    if(flag):
+    flag3 = stack.is_empty()
+    if(flag3) and flag1 and flag2:
         print("Balanced Paranthesis ")
     else:
         print("Unbalanced Paranthesis ")

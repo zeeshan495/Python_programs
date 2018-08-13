@@ -34,7 +34,6 @@ def main():
             list.delete(new_word)
         list.display()
         node = list.head
-        print(node)
         utility.print_list(file_name, node)
 
         file.close()

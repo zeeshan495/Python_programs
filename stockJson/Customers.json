@@ -1,1 +1,1 @@
-{"nikhil": {"amount": 50000, "no_of_shares": 300, "customer_name": "nikhil"}, "shubham": {"amount": 50000, "no_of_shares": 600, "customer_name": "shubham"}, "zeeshan": {"amount": 99000, "no_of_shares": 512, "customer_name": "zeeshan"}}
+{"shubham": {"amount": 50000, "no_of_shares": 600, "customer_name": "shubham"}, "nikhil": {"amount": 50000, "no_of_shares": 300, "customer_name": "nikhil"}, "shiv": {"amount": 4000, "no_of_shares": 100, "customer_name": "shiv"}, "zeeshan": {"amount": 0, "no_of_shares": 1749, "customer_name": "zeeshan"}}

@@ -15,7 +15,7 @@ class Regex_main:
         print("enter a full name")
         info_obj.set__full_name(utility.input_str_data())
         print("enter a mobile number : ")
-        info_obj.set__mobile_num(utility.input_str_data())
+        info_obj.set__mobile_num(utility.input_int_data())
         date = datetime.now()
         info_obj.set__date(str(date)[:20])
         flag = regex_obj.regex_replace(info_obj)
@@ -23,5 +23,5 @@ class Regex_main:
         if (flag == True):
             regex_obj.display()
             break
-        else:
-            print("Please enter data properly")
+        # else:
+        #     print("Please enter data properly")

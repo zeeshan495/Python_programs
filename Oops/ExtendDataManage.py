@@ -53,13 +53,17 @@ class ExtendDataManage():
             f.write(data)
 
     def calculation(self):
+        var_keys = self.my_list.keys()
+        var_index = 0
         for x in self.my_list:
             for y in range(0,len(self.my_list[x])):
+                print(var_keys[var_index])
                 print("type : "+str(self.my_list[x][y]["type"])+"\n"),
                 print("price : " + str(self.my_list[x][y]["price"]) + "\n"),
                 print("weight : " + str(self.my_list[x][y]["weight"]) + "\n"),
                 print("Total Price of "+str(self.my_list[x][y]["type"])+" : " + str(self.my_list[x][y]["price"] * self.my_list[x][y]["weight"]) + "\n"),
                 print("\n")
+            var_index += 1
 
 class DataManageMain:
     obj = ExtendDataManage("extendDataManage")

@@ -29,4 +29,4 @@ class PrimeQueue:
             non_annagram.append(prime_arr[x])
 
     print("After adding in queue : ")
-    queue.display()
+    queue.display_que()

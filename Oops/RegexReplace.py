@@ -1,5 +1,4 @@
 
-
 from Utility import *
 from RegexInfo import *
 class RegexReplace:

@@ -5,11 +5,12 @@ from CommercialDataProcessing.model.Transaction import *
 from CommercialDataProcessing.controller.LinkedList import *
 from CommercialDataProcessing.controller.QueueLinkedList import *
 from CommercialDataProcessing.controller.Stack import *
+from StackAbstract import *
 from Oops.Utility import *
 from datetime import *
 import json
 import os
-class StockImplementation:
+class StockImplementation(StackAbstract):
     __company_list = []
     __customer_list = {}
     utility = Utility()
@@ -28,7 +29,7 @@ class StockImplementation:
         self.read_transactions()
         self.__customer_list = self.read_customers("Customers")
 
-
+    #   reading companies in stack
     def read_companies(self):
         path_name = "/home/bridgeit/Zeeshan_Python/stockJson/Companies.json"
         if (os.stat(path_name).st_size != 0):
@@ -37,6 +38,7 @@ class StockImplementation:
             for x in range(0,len(data)):
                 self.stack_obj.push(data[x])
 
+    #   reading transactions in queue
     def read_transactions(self):
         path_name = "/home/bridgeit/Zeeshan_Python/stockJson/Transaction.json"
         if (os.stat(path_name).st_size != 0):
@@ -45,7 +47,7 @@ class StockImplementation:
             for x in range(0,len(data)):
                 self.queue_obj.add_rear(data[x])
 
-
+    #   reading transactions in list
     def read_customers(self, file_name):
         my_list = {}
         path_name = "/home/bridgeit/Zeeshan_Python/stockJson/" + file_name + ".json"
@@ -211,6 +213,7 @@ class StockImplementation:
                 self.transaction.set_company_symbol(particular_company["company_symbol"])
                 self.transaction.set_total_price(var_amount)
                 self.transaction.set_total_shares(shares)
+                self.transaction.set_buy_sell("Buy")
                 date = datetime.now()
                 self.transaction.set_time(str(date)[:20])
                 self.queue_obj.add_rear({"customer_name": self.transaction.get_customer_name(),
@@ -223,7 +226,6 @@ class StockImplementation:
                 self.save("Transaction", self.queue_obj)
                 self.save("Companies", self.stack_obj)
                 self.save_customers("Customers", self.__customer_list)
-
 
             else:
                 print("customer had insufficient shares")

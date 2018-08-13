@@ -147,10 +147,12 @@ class Utility:
             #     my_array[x] = my_array[x]/10
             #     print(my_array[x])
             var_temp=str(my_array[x])
-            if(var_temp == var_temp[::-1]):
-                print(str(var_temp)+" palindrome")
-            else:
-                print(str(var_temp)+" is not a palindrome")
+            if int(var_temp) > 10:
+                if(var_temp == var_temp[::-1]):
+                    if var_temp > 10:
+                        print(str(var_temp)+" palindrome")
+                else:
+                    print(str(var_temp)+" is not a palindrome")
 
     def guessing(self,var_low,var_high):
         var_mid=(var_low+var_high)/2
@@ -230,8 +232,11 @@ class Utility:
                 var_x=var_x+1
 
         left_array = self.merge_sort(left_array)
+        # print(" left_array "+str(left_array))
         right_array = self.merge_sort(right_array)
+        # print(" right_array " + str(right_array))
         result_array = self.merge_arrays(left_array,right_array)
+        print(" result_array " + str(result_array))
         return result_array
 
     def merge_arrays(self,left_array,right_array):
@@ -246,12 +251,12 @@ class Utility:
             if(var_left_index < len(left_array)) and (var_right_index < len(right_array)):
                 if(left_array[var_left_index] <= right_array[var_right_index]):
                     result_array[var_result_index] = left_array[var_left_index]
-                    var_left_index = var_left_index+1
-                    var_result_index = var_result_index+1
+                    var_left_index += 1
+                    var_result_index += 1
                 else:
-                    result_array[var_result_index] = right_array[var_left_index]
-                    var_right_index = var_right_index + 1
-                    var_result_index = var_result_index + 1
+                    result_array[var_result_index] = right_array[var_right_index]
+                    var_right_index += 1
+                    var_result_index += 1
 
             elif (var_left_index < len(left_array)):
                 result_array[var_result_index] = left_array[var_left_index]
@@ -262,7 +267,6 @@ class Utility:
                 result_array[var_result_index] = right_array[var_right_index]
                 var_right_index = var_right_index + 1
                 var_result_index = var_result_index + 1
-
         return result_array
 
     def counting_notes(self,var_amount):
